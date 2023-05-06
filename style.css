@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
     margin: 0;
     padding: 0;
@@ -58,4 +59,66 @@ nav{
 
 /*--------------------------------
         Navigation bar End
+=======
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*--------------------------------
+        Navigation bar Start
+---------------------------------*/
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+    margin-top: 0.5rem;
+    background-color: rgb(245, 245, 245);
+    padding: 1rem;
+}
+.logo{
+    width: 10%;
+}
+
+/*------Menu bar------*/
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.menu li{
+    list-style: none;
+    padding: 0.5rem;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between; 
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/*------Cart and Profile-------*/
+.navigation-left{
+    display: flex;
+    justify-content: space-between;
+    width: 10%;
+}
+.navigation-left .cart a, .profile a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*--------------------------------
+        Navigation bar End
+>>>>>>> a17ec5f29414d975385f449d0798c1fa3e30a55d
 ---------------------------------*/
