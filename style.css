@@ -1,4 +1,10 @@
-<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;200;300;500;600;700;800&family=Battambang:wght@100;300;400;700;900&family=Gloria+Hallelujah&family=Mynerve&family=Phudu:wght@300&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@200;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&family=Shantell+Sans:ital,wght@0,300;0,400;1,300&display=swap');
+
+:root{
+    --primary-font: poppins;
+    --black-primary: #333333;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -19,6 +25,7 @@ nav{
 }
 .logo{
     width: 10%;
+    font-family: var(--primary-font);
 }
 
 /*------Menu bar------*/
@@ -27,6 +34,7 @@ nav{
     justify-content: center;
     align-items: center;
     width: 80%;
+    font-family: var(--primary-font);
 }
 .menu li{
     list-style: none;
@@ -41,67 +49,8 @@ nav{
 .menu li a{
     text-decoration: none;
     color: black;
-}
-
-
-
-/*------Cart and Profile-------*/
-.navigation-left{
-    display: flex;
-    justify-content: space-between;
-    width: 10%;
-}
-.navigation-left .cart a, .profile a{
-    text-decoration: none;
-    color: black;
-}
-
-
-/*--------------------------------
-        Navigation bar End
-=======
-*{
-    margin: 0;
-    padding: 0;
-}
-
-
-/*--------------------------------
-        Navigation bar Start
----------------------------------*/
-nav{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 1rem;
-    margin-top: 0.5rem;
-    background-color: rgb(245, 245, 245);
     padding: 1rem;
-}
-.logo{
-    width: 10%;
-}
-
-/*------Menu bar------*/
-.menu{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-}
-.menu li{
-    list-style: none;
-    padding: 0.5rem;
-    padding-top: 0rem;
-    padding-bottom: 0rem;
-}
-.menu ul{
-    display: flex;
-    justify-content: space-between; 
-}
-.menu li a{
-    text-decoration: none;
-    color: black;
+    color: var(--grey-primary);
 }
 
 
@@ -120,5 +69,6 @@ nav{
 
 /*--------------------------------
         Navigation bar End
->>>>>>> a17ec5f29414d975385f449d0798c1fa3e30a55d
 ---------------------------------*/
+
+
