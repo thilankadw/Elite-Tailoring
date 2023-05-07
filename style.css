@@ -1,8 +1,12 @@
+/*-------Importing google fonts (poppins)---------*/
 @import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@100;200;300;500;600;700;800&family=Battambang:wght@100;300;400;700;900&family=Gloria+Hallelujah&family=Mynerve&family=Phudu:wght@300&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@200;300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&family=Shantell+Sans:ital,wght@0,300;0,400;1,300&display=swap');
 
 :root{
+    /*-----fonts-----*/
     --primary-font: poppins;
-    --black-primary: #333333;
+
+    /*-----font-colors-----*/
+    --black-primary: #3b3b3b;
 }
 
 *{
@@ -48,9 +52,9 @@ nav{
 }
 .menu li a{
     text-decoration: none;
-    color: black;
+    color: var(--black-primary);
+    font-weight: 500;
     padding: 1rem;
-    color: var(--grey-primary);
 }
 
 
@@ -63,8 +67,10 @@ nav{
 }
 .navigation-left .cart a, .profile a{
     text-decoration: none;
-    color: black;
+    font-family: var(--primary-font);
+    color: var(--black-primary);
 }
+
 
 
 /*--------------------------------
