@@ -7,6 +7,7 @@
 
     /*-----font-colors-----*/
     --black-primary: #3b3b3b;
+    --black-secondary: #777777;
 }
 
 *{
@@ -50,11 +51,14 @@ nav{
     display: flex;
     justify-content: space-between; 
 }
-.menu li a{
+.menu-elements{
     text-decoration: none;
-    color: var(--black-primary);
+    color: var(--black-secondary);
     font-weight: 500;
     padding: 1rem;
+}
+.menu-elements:hover{
+    color: var(--black-primary);
 }
 
 
