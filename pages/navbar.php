@@ -8,6 +8,10 @@
     <title>Elite Tailoring</title>
     <link rel="stylesheet" href="../style.css" />
     <script src="../script.js"></script>
+
+    <!--Font_Awesome library importing-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   </head>
   <body>
     <div>
@@ -25,7 +29,7 @@
               </ul>
             </div>
             <div class="navigation-left">
-              <div class="cart"><a href="#">Cart</a></div>
+              <div class="cart"><a href="#"><i class="fa-solid fa-cart-shopping" style="color: #3b3b3b;"></i></a></div>
               <div class="profile"><a href="#">Profile</a></div>
             </div>
         </nav>
