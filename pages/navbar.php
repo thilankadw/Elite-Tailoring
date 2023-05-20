@@ -20,17 +20,17 @@
           <div class="logo">ELITE</div>
             <div class="menu">
               <ul>
-                <li><a href="#" class="menu-elements">Home</a></li>
-                <li><a href="Store.html" class="menu-elements">Store</a></li>
-                <li><a href="#" class="menu-elements">Book Appointments</a></li>
-                <li><a href="Measurementinput.html" class="menu-elements">Career</a></li>
-                <li><a href="book&appointment.html" class="menu-elements">Contact Us</a></li>
+                <li><a href="index.php" class="menu-elements">Home</a></li>
+                <li><a href="online_store.php" class="menu-elements">Store</a></li>
+                <li><a href="appointment_booking.php" class="menu-elements">Book Appointments</a></li>
+                <li><a href="measurements_input.php" class="menu-elements">Career</a></li>
+                <li><a href="#" class="menu-elements">Contact Us</a></li>
                 <li><a href="#" class="menu-elements">About Us</a></li>
               </ul>
             </div>
             <div class="navigation-left">
               <div class="cart"><a href="#"><i class="fa-solid fa-cart-shopping" style="color: #3b3b3b;"></i></a></div>
-              <div class="profile"><a href="#">Profile</a></div>
+              <div class="profile"><a href="#"><i class="fa-solid fa-user" style="color: #3b3b3b;"></i></a></div>
             </div>
         </nav>
       <!--Navigation Bar End-->

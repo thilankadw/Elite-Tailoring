@@ -8,10 +8,7 @@
     /*-----font-colors-----*/
     --black-primary: #3b3b3b;
     --black-secondary: #777777;
-<<<<<<< HEAD
-=======
     
->>>>>>> acaf128603069a2b25b5f55e9b21aa95ca633172
 }
 
 *{
@@ -70,7 +67,7 @@ nav{
 /*------Cart and Profile-------*/
 .navigation-left{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 10%;
 }
 .navigation-left .cart a, .profile a{
@@ -78,6 +75,7 @@ nav{
     font-family: var(--primary-font);
     color: var(--black-primary);
 }
+
 
 
 /*--------------------------------
@@ -88,10 +86,9 @@ nav{
 
 
 
-/*--------------------------------
-       *****************     
+
+/*--------------------------------     
         STORE CSS START
-       *****************
 ---------------------------------*/
 
 /*------dress-category-bar START------*/
@@ -157,7 +154,5 @@ nav{
 
 
 /*--------------------------------
-       ****************   
-        STORE CSS END
-       ****************
+          STORE CSS END
 ---------------------------------*/
