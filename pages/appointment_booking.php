@@ -39,79 +39,79 @@
 
       <div class="booking-form-container">
 
-      <h2 class="booking-form-title">Book an Appointment</h2>
+        <h2 class="booking-form-title">Book an Appointment</h2>
 
-      <div class="booking-form">
+        <div class="booking-form">
       
-      <form
-        method="post"
-        action="file:///D:/SLIIT%20SAW/1st%20year/2%20SEMESTER/Projects/IWT/book_appointment.php"
-      >
-      <div class="form-element">
-        <label for="firstname" class="form-label">First Name:</label>
-        <input type="text" id="firstname" name="firstname" required="" class="form-input" />
-      </div>
-        
+        <form
+          method="post"
+          action="file:///D:/SLIIT%20SAW/1st%20year/2%20SEMESTER/Projects/IWT/book_appointment.php"
+        >
+          <div class="form-element">
+            <label for="firstname" class="form-label">First Name:</label>
+            <input type="text" id="firstname" name="firstname" required="" class="form-input" />
+          </div>
+          
 
-      <div class="form-element">
-        <label for="lastname" class="form-label">Last Name:</label>
-        <input type="text" id="lastname" name="lastname" required="" class="form-input" />
-        </div>
+          <div class="form-element">
+            <label for="lastname" class="form-label">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" required="" class="form-input" />
+          </div>
 
-        <div class="form-element">
-        <label for="email" class="form-label">Email Address:</label>
-        <input type="email" id="email" name="email" required="" class="form-input" />
-      </div>
+          <div class="form-element">
+            <label for="email" class="form-label">Email Address:</label>
+            <input type="email" id="email" name="email" required="" class="form-input" />
+          </div>
 
-        <div class="form-element">
-        <label for="mobile" class="form-label">Mobile Number:</label>
-        <input type="tel" id="mobile" name="mobile" required="" class="form-input" />
-      </div>
+          <div class="form-element">
+            <label for="mobile" class="form-label">Mobile Number:</label>
+            <input type="tel" id="mobile" name="mobile" required="" class="form-input" />
+          </div>
 
-        <div class="form-element">
-        <label for="address" class="form-label">Full Address:</label>
-        <textarea id="address" name="address" required=""></textarea>
-      </div>
+          <div class="form-element">
+            <label for="address" class="form-label">Full Address:</label>
+            <textarea id="address" name="address" required=""></textarea>
+          </div>
 
-        <div class="form-element">
-        <label for="city" class="form-label">City:</label>
-        <input type="text" id="city" name="city" required="" class="form-input" />
-      </div>
+          <div class="form-element">
+            <label for="city" class="form-label">City:</label>
+            <input type="text" id="city" name="city" required="" class="form-input" />
+          </div>
 
-        <div class="form-element">
-          <label for="service" class="form-label">Select Service:</label>
-        <select id="service" name="service" required="">
-          <option value="Service 1">---</option>
-          <option value="Service 2">Custom Tailoring For Women</option>
-          <option value="Service 3">Custom Tailoring For Kids</option>
-          <option value="Service 4">Custom Tailoring For Men</option>
-        </select>
-      </div>
-        
+          <div class="form-element">
+            <label for="service" class="form-label">Select Service:</label>
+          <select id="service" name="service" required="">
+            <option value="Service 1">---</option>
+            <option value="Service 2">Custom Tailoring For Women</option>
+            <option value="Service 3">Custom Tailoring For Kids</option>
+            <option value="Service 4">Custom Tailoring For Men</option>
+          </select>
+          </div>
+          
 
-        <div class="form-element">
-        <label for="appointment_date" class="form-label">Appointment Date:</label>
-        <input
-          type="date"
-          id="appointment_date"
-          name="appointment_date"
-          required=""
-          class="form-input"
-        />
-      </div>
+          <div class="form-element">
+            <label for="appointment_date" class="form-label">Appointment Date:</label>
+            <input
+            type="date"
+            id="appointment_date"
+            name="appointment_date"
+            required=""
+            class="form-input"
+          />
+          </div>
 
-        <div class="form-element">
-        <label for="time" class="form-label">Select Time:</label>
-        <input type="time" id="time" name="time" required="" class="form-input" />
-      </div>
+          <div class="form-element">
+            <label for="time" class="form-label">Select Time:</label>
+            <input type="time" id="time" name="time" required="" class="form-input" />
+          </div>
 
-        <div class="form-element">
-        <label for="message" class="form-label">Message:</label>
-        <textarea id="message" name="message" required="" ></textarea>
-      </div>
+          <div class="form-element">
+            <label for="message" class="form-label">Message:</label>
+            <textarea id="message" name="message" required="" ></textarea>
+          </div>
 
-        <input type="submit" value="Book Appointment" />
-      </form>
+          <input type="submit" value="Book Appointment" />
+        </form>
     </div>
       
       </div>
