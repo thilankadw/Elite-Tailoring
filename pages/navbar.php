@@ -29,8 +29,16 @@
               </ul>
             </div>
             <div class="navigation-left">
-              <div class="cart"><a href="#"><i class="fa-solid fa-cart-shopping" style="color: #3b3b3b;"></i></a></div>
-              <div class="profile"><a href="#"><i class="fa-solid fa-user" style="color: #3b3b3b;"></i></a></div>
+              <div class="cart">
+                <a href="#">
+                  <i class="fa-solid fa-cart-shopping" style="color: #3b3b3b;"></i>
+                </a>
+              </div>
+              <div class="profile">
+                <a href="#">
+                  <i class="fa-solid fa-user" style="color: #3b3b3b;"></i>
+                </a>
+              </div>
             </div>
         </nav>
       <!--Navigation Bar End-->
