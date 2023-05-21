@@ -8,7 +8,10 @@
     /*-----font-colors-----*/
     --black-primary: #3b3b3b;
     --black-secondary: #777777;
-    --gray-primary: #7d552f;
+    --white-secondary: #f3f3f3;
+    --white-primary: rgb(245, 245, 245);
+    --brown-primary: #7d552f;
+    --brown-secondary: #d98014;
     
 }
 
@@ -27,7 +30,7 @@ nav{
     align-items: center;
     margin: 1rem;
     margin-top: 0.5rem;
-    background-color: rgb(245, 245, 245);
+    background-color: var(--white-primary);
     padding: 1rem;
 }
 .logo{
@@ -73,7 +76,7 @@ nav{
     left: 0;
     width: 0;
     height: 2px;
-    background-color: var(--gray-primary);
+    background-color: var(--brown-secondary);
     border-radius: 1rem;
     transition: width 0.3s ease;
   }
@@ -159,7 +162,7 @@ nav{
 /*------Product Display area START ------*/
 
 #product-box{
-    background-color: rgb(243, 239, 239);
+    background-color: var(--white-primary);
     width: 240px;
     height: 300px;
     display: block;
@@ -197,7 +200,6 @@ nav{
 -----------------------------------------------*/
 
 /*------Paragraph-------*/
-
 .booking-container{
     margin: 1rem;
     display: flex;
@@ -208,16 +210,71 @@ nav{
 .booking-container .booking-para-container .booking-para{
     font-family: var(--primary-font);
     text-align: center;
+    color: var(--black-primary);
 }
 
 /*------Form-------*/
+.booking-form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+    background-color: var();
+}
 .booking-form-title{
     font-family: var(--primary-font);
+    margin: 1rem;
 }
 label{
     display: block;
     font-family: var(--primary-font);
+    color: var(--black-primary);
+}
+.form-element{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.booking-form-container .booking-form .form-element input , textarea, select, option{
+    width: 20rem;
+    height: 1.5rem;
+    background-color: var(--white-secondary);
+    border: none;
+    border-radius: 2px;
+    padding: 0.3rem;
+    margin: 0.3rem;
+    margin-left: 1rem;
+}
+.booking-form-container .booking-form .form-element select {
+    height: 2.3rem;
+    width: 20.5rem;
+    padding: 0.3rem;
+}
+.booking-form-container .booking-form .form-element input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+.booking-form-container .booking-form .form-element input::placeholder, textarea::placeholder, select{
+    font-family: var(--primary-font); 
+}
+textarea{
+    resize: none;
+    width: 20rem;
+    height: 8rem;
+}
+
+/*---Buttons---*/
+.btn{
+    padding: 0.5rem;
+    font-family: var(--primary-font);
+    background-color: var(--brown-secondary);
+    border: none;
+    color: var(--white-secondary);
+    border-radius: 3px;
+    position: relative;
+    left: 7rem;
+    margin-top: 1.5rem;
 }
 /*----------------------------------------------
         Appointment Booking Page End
 -----------------------------------------------*/
+
