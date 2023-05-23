@@ -98,7 +98,7 @@
 
           <div class="form-element">
             <label for="message" class="form-label">Message:</label>
-            <textarea id="message" name="message" required="" placeholder="Type your message" cols="6" rows="3"></textarea>
+            <textarea id="message" name="message" placeholder="Type your message" cols="6" rows="3"></textarea>
           </div>
 
           
@@ -108,6 +108,17 @@
       
       </div>
     </div>
+
+
+
+    <div>
+      <!--Footer Start-->
+
+      <?php include 'footer.php';?>
+
+      <!--Footer End-->
+    </div>
+
 
     
   </body>

@@ -19,5 +19,14 @@
     </div>
 
 
+
+    <div>
+      <!--Footer Start-->
+
+      <?php include 'footer.php';?>
+
+      <!--Footer End-->
+    </div>
+
     
    </body>

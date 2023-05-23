@@ -107,6 +107,51 @@ nav{
 
 
 
+/*--------------------------------
+        Footer Start
+---------------------------------*/
+
+.footer-container{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-primary);
+}
+.footer-logo, .footer-text, .footer-navigation, .footer-social-links, .footer-contact {
+    margin: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--primary-font);
+    color: var(--black-primary);
+}
+.footer-logo{
+    width: 20rem;
+    height: 5rem;
+    background-color: red;
+}
+.footer-social-links, .footer-contact{
+    width: 30rem;
+}
+.footer-social-links{
+    justify-content: space-around;
+}
+
+.footer-container .footer-navigation ul li{
+    list-style: none;
+}
+.footer-container .footer-navigation ul li a{
+    text-decoration: none;
+    color: var(--black-primary);
+}
+
+/*--------------------------------
+        Footer End
+---------------------------------*/
+
 
 
 /*--------------------------------     
@@ -274,7 +319,57 @@ textarea{
     left: 7rem;
     margin-top: 1.5rem;
 }
+
 /*----------------------------------------------
         Appointment Booking Page End
 -----------------------------------------------*/
+
+
+
+
+/*------------------------------------
+         FAQ Page Start
+-------------------------------------*/
+
+.faq-container{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.faq-topic{
+    font-family: var(--primary-font);
+    margin: 1rem;
+}
+.faq-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.faq-left-section, .faq-right-section{
+    width: 50%;
+    margin: 1rem;
+}
+.faq-question-part{
+    font-family: var(--primary-font);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq-container .faq-section .faq .faq-question-part i{
+    position: relative;
+    left: -2rem;
+}
+.faq-question{
+    color: var(--black-primary);
+    font-weight: 500;
+}
+.faq-answer-part{
+    font-family: var(--primary-font);
+    text-align: justify;
+}
+/*------------------------------------
+         FAQ Page End
+-------------------------------------*/
 
