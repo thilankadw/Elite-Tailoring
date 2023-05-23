@@ -159,3 +159,35 @@ nav{
         STORE CSS END
        ****************
 ---------------------------------*/
+
+/* Carrer page design strat*/
+
+h1{
+    text-align: center;
+     margin: auto;
+     font-size: 50px;
+ }
+ p{
+     text-align: center;
+ 
+ }
+ #pos1{
+     display:block;
+     border:2px outset black;
+     margin: auto;
+     margin-left: 10px;
+     margin-top: 10px;
+     text-align: center;
+     padding: 10px,10px,10px,10px;
+     font-style: italic;
+ }
+ #container{
+     display:flex;
+ }
+ 
+ 
+ #view{
+     padding: 10px,10px,10px,10px;
+     display: block;
+     
+ }
