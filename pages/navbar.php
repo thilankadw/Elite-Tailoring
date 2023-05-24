@@ -20,7 +20,7 @@
           <div class="logo">ELITE</div>
             <div class="menu">
               <ul>
-                <li><a href="index.php" class="menu-elements">Home</a></li>
+                <li><a href="index.php" class="menu-elements">HOME</a></li>
                 <li><a href="online_store.php" class="menu-elements">Store</a></li>
                 <li><a href="appointment_booking.php" class="menu-elements">Book Appointments</a></li>
                 <li><a href="measurements_input.php" class="menu-elements">Career</a></li>
