@@ -10,27 +10,9 @@
     <script src="../script.js"></script>
   </head>
   <body>
-    <div>
-      <!--Navigation Bar Start-->
-        <nav>
-          <div class="logo">ELITE</div>
-            <div class="menu">
-              <ul>
-                <li><a href="#" class="menu-elements">Home</a></li>
-                <li><a href="Store.html" class="menu-elements">Store</a></li>
-                <li><a href="#" class="menu-elements">Book Appointments</a></li>
-                <li><a href="#" class="menu-elements">Career</a></li>
-                <li><a href="#" class="menu-elements">Contact Us</a></li>
-                <li><a href="#" class="menu-elements">About Us</a></li>
-              </ul>
-            </div>
-            <div class="navigation-left">
-              <div class="cart"><a href="#">Cart</a></div>
-              <div class="profile"><a href="#">Profile</a></div>
-            </div>
-        </nav>
-      <!--Navigation Bar End-->
-    </div>
+  <?php
+          include 'navbar.php';
+  ?>
     <div>
         <h1>Elite Tailoring</h1>
         <p>start your carrer with us </p>
@@ -75,7 +57,9 @@
     
     
         </div>
-    
+    <?php
+                include 'index.php';
+    ?>
     
     </body>
   </body>

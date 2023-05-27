@@ -12,23 +12,8 @@
   <body>
     <div>
       <!--Navigation Bar Start-->
-        <nav>
-          <div class="logo">ELITE</div>
-            <div class="menu">
-              <ul>
-                <li><a href="index.html" class="menu-elements">Home</a></li>
-                <li><a href="#" class="menu-elements">Store</a></li>
-                <li><a href="#" class="menu-elements">Book Appointments</a></li>
-                <li><a href="#" class="menu-elements">Career</a></li>
-                <li><a href="#" class="menu-elements">Contact Us</a></li>
-                <li><a href="#" class="menu-elements">About Us</a></li>
-              </ul>
-            </div>
-            <div class="navigation-left">
-              <div class="cart"><a href="#">Cart</a></div>
-              <div class="profile"><a href="#">Profile</a></div>
-            </div>
-        </nav>
+        
+      <?php include 'navbar.php';?>
         
       <!--Navigation Bar End-->
     </div>
@@ -90,5 +75,16 @@
 
     </div>
 
+
+
+
+    <div>
+      <!--Footer Start-->
+
+      <?php include 'footer.php';?>
+
+      <!--Footer End-->
+    </div>
+    
   </body>
 </html>

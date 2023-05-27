@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*image slide show functio in carrer page*/ 
 alert("hello ");
 
@@ -20,3 +21,13 @@ function scarousellideshow(){
     x[imgIndex-1].style.display="block";
     setTimeout(carousel,2500);
 }
+=======
+///-----FAQ---///
+
+
+var button = document.getElementById('mybtn');
+
+button.addEventListener("click", function(){
+    document.getElementById("faq-answer-1").style.display = "none";
+})
+>>>>>>> 33992cdb479a10a6377ddf4cf1540c426f6f1239
