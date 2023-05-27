@@ -41,40 +41,7 @@
    
     <div class="main-banner-store"> </div><br>
 
-    <div class="product-display"> 
-
-        <div id="product-box"></div>
-        <div id="product-box"></div>
-        <div id="product-box"></div>
-        <div id="product-box"></div>
-        <div id="product-box"></div>
-
-        <div id="product-box"></div>
-        <div id="product-box"></div>
-        <div id="product-box"></div>
-        <div id="product-box"></div>
-        <div id="product-box"></div>
-
-        <div id="product-box"></div>
-        <div id="product-box"></div>
-        <div id="product-box"></div>
-        <div id="product-box"></div>
-        <div id="product-box"></div>
-
-        <div id="product-box"></div>
-        <div id="product-box"></div>
-        <div id="product-box"></div>
-        <div id="product-box"></div>
-        <div id="product-box"></div>
-
-        <div id="product-box"></div>
-        <div id="product-box"></div>
-        <div id="product-box"></div>
-        <div id="product-box"></div>
-        <div id="product-box"></div>
-
-    </div>
-
+    
 
 
 
