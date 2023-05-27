@@ -234,11 +234,26 @@ nav{
 }
     
 
- }
- p{
+ 
+ #chead{
      text-align: center;
  
  }
+ #cpara{
+
+    text-align: center;
+
+
+ }
+
+
+
+
+
+
+
+
+ 
  #pos1{
      display:block;
      border:2px outset black;
@@ -254,12 +269,14 @@ nav{
  }
  
  
- #view{
-     padding: 10px,10px,10px,10px;
-     display: block;
+#posBtn{
+
+    margin: auto;
+    padding: 10px,10px,10px,10px;
+}
      
- }
-=======
+ 
+
 ---------------------------------*/
 
 

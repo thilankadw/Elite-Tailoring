@@ -24,6 +24,8 @@
                 <li><a href="online_store.php" class="menu-elements">Store</a></li>
                 <li><a href="appointment_booking.php" class="menu-elements">Book Appointments</a></li>
                 <li><a href="measurements_input.php" class="menu-elements">Career</a></li>
+                <li><a href="carrer.php" class="menu-elements">Career</a></li>
+
                 <li><a href="faq.php" class="menu-elements">Contact Us</a></li>
                 <li><a href="#" class="menu-elements">About Us</a></li>
               </ul>

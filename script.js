@@ -4,7 +4,7 @@ alert("hello ");
 
 var imgIndex=0;
 carousel(); 
-function scarousellideshow(){
+function carousel(){
 
     var i;
     var x=document.getElementsByClassName("myslides");

@@ -14,12 +14,10 @@
           include 'navbar.php';
   ?>
     <div>
-        <h1>Elite Tailoring</h1>
-        <p>start your carrer with us </p>
+        <h1 id="chead">Elite Tailoring</h1>
+        <p id="cpara">start your carrer with us </p>
         <img src="../images/main-image.jpg" alt="main image" class="myslides" style="width:100%">
-        <img src="../images/main-image1.jpg" alt="main image" class="myslides" style="width:100%">
-        <img src="../images/main-image2.jpg" alt="main image" class="myslides" style="width:100%">
-        <img src="../images/main-image3.jpg" alt="main image" class="myslides" style="width:100%">
+
     </div>
         <div id="container">
                     <div id="pos1">
@@ -27,7 +25,7 @@
                         <p id="cDescription"></p>
                         <img src="../images/tailor.jpg" alt=""><br>
     
-                        <a href="carrer-registration.html" id="view"> View more...</a>
+                        <a href="carrer-registration.php" id="view"><button id="posBtn">register</button></a>
                     </div>
                     
                     <div id="pos1">
@@ -35,7 +33,7 @@
                         <p id="cDescription"></p>
                         <img src="../images/designer.jpg" alt="" ><br>
     
-                        <a href="carrer-registration.html"  id="view"> View more...</a>
+                        <a href="carrer-registration.php"  id="view"> <button id="posBtn"> register</button></a>
                     </div>
     
                     <div id="pos1">
@@ -43,7 +41,7 @@
                         <p id="cDescription"></p>
                         <img src="../images/tailor.jpg" alt=""><br>
     
-                        <a href="carrer-registration.html" id="view"> View more...</a>
+                        <a href="carrer-registration.php" id="view"><button id="posBtn"> register</button></a>
                     </div>
                     
                     <div id="pos1">
@@ -51,14 +49,14 @@
                         <p id="cDescription"></p>
                         <img src="../images/designer.jpg" alt=""  id="view"><br>
     
-                        <a href="carrer-registration.html" id="view"> View more...</a>
+                        <a href="carrer-registration.php" id="view"> <button id="posBtn">register</button></a>
                     </div>
     
     
     
         </div>
     <?php
-                include 'index.php';
+                include 'footer.php';
     ?>
     
     </body>
