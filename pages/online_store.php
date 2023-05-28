@@ -8,6 +8,7 @@
     <title>Elite Tailoring Store</title>
     <link rel="stylesheet" href="../style.css" />
     <script src="../script.js"></script>
+  
   </head>
   <body>
     <div>
@@ -38,8 +39,12 @@
     <!--dress category Bar end-->
 
     
-   
-    <div class="main-banner-store"> </div><br>
+   <div id="banners-store">
+      <div id="store-M"><img src="Store_images\storeM.jpg"  ></div>
+      <div id="store-W"></div>
+      <div id="store-K"></div>
+      <div id="store-Y"></div>
+    </div> 
 
     
 
