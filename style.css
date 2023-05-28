@@ -209,13 +209,105 @@ nav{
 
 /*------Main Banners store START ------*/
 
-#banners-store
-{
-    width:full;
-    margin-top: 5px;
-    height: 1300px;
-    background-color:lightblue;
+.store-banner-text{
+    font-family: var(--primary-font);
+    font-size: 25px;
+    font-weight: 600;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    background-size: cover;
+    margin-top: 160px;
+    margin-left: 40px;
+}
+
+.store-banner-text-kids{
+    font-family: var(--primary-font);
+    font-size: 25px;
+    font-weight: 600;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    background-size: cover;
+    margin-top: 125px;
+    margin-left: 450px;
+}
+
+.store-banner-text-young{
+    font-family: var(--primary-font);
+    font-size: 25px;
+    font-weight: 600;
+    background-position: center;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    align-items: center;
+    background-size: cover;
+    margin-top: 300px;
+    margin-left: 450px;
+}
+
+.store-buttons{
+    font-family: var(--primary-font);
+    font-weight: 500;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid;
+    color: var(--black-primary);
+    align-items: center;
+    background-position: center;
+    margin-top: 10px;
+    margin-left: 40px;
+    background-color: var(--white-secondary);
+}
+.store-buttonK{
+    font-family: var(--primary-font);
+    font-weight: 500;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid;
+    color: var(--black-primary);
+    align-items: center;
+    background-position: center;
+    margin-top: 10px;
+    margin-left: 450px;
+    background-color: var(--white-secondary);
+}
+
+.store-buttonY{
+    font-family: var(--primary-font);
+    font-weight: 500;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid;
+    color: var(--black-primary);
+    align-items: center;
+    background-position: center;
+    margin-top: 10px;
+    margin-left: 450px;
+    background-color: var(--white-secondary);
+}
+
+
+.store-buttons:hover{
+    font-weight: 550;
+    font-family: var(--primary-font);
+    font-size: 22px;
     
+}
+.store-buttonK:hover{
+    font-weight: 550;
+    font-family: var(--primary-font);
+    font-size: 22px;
+}
+.store-buttonY:hover{
+    font-weight: 550;
+    font-family: var(--primary-font);
+    font-size: 22px;
 }
 
 #store-M{
@@ -224,7 +316,7 @@ nav{
     float: left;
     margin: 15px;
     margin-left: 20px;
-    background-image: url(C:\wamp64\www\Elite-Tailoring\Store_images\storeM.jpg);
+    background-image: url(../Elite-Tailoring/assets/Store/storeM.jpg);
     background-size: cover;
     background-position: center;
     align-items: center;
@@ -237,7 +329,7 @@ nav{
     float: left;
     margin: 15px;
     margin-right: 16px;
-    background-image:url(C:\wamp64\www\Elite-Tailoring\Store_images\storeM.jpg\storeM.jpg\ images/storeM.jpg);
+    background-image:url(../Elite-Tailoring/assets/Store/storeW.jpeg);
     background-size: cover;
     background-position: center;
     align-items: center;
@@ -250,7 +342,7 @@ nav{
     float: left;
     margin: 15px;
     margin-left: 20px;
-    background-color: #d98014;
+    background-image:url(../Elite-Tailoring/assets/Store/storeK.jpg);
     background-size: cover;
     background-position: center;
     align-items: center;
@@ -262,7 +354,7 @@ nav{
     float: left;
     margin: 15px;
     margin-right: 16px;
-    background-color: #7d552f;
+    background-image:url(../Elite-Tailoring/assets/Store/storeY.png);
     background-size: cover;
     background-position: center;
     align-items: center;
@@ -481,4 +573,3 @@ textarea{
          FAQ Page End
 -------------------------------------*/
 
->>>>>>> 33992cdb479a10a6377ddf4cf1540c426f6f1239
