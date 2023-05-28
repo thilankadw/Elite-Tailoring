@@ -401,18 +401,20 @@ nav{
     font-family: var(--primary-font);
     background-color: rgb(72, 162, 192);
     font-weight: 700;
-    font-size: 14x;
+    font-size: 18x;
     border: none;
     color: black;
     border-radius: 7px;
     position: relative;
     left: 7rem;
     margin: 1.5rem;  
+    width: 250px;
+
 }
 
 .register-form-btn:hover{
     font-weight: 800;
-    background-color: white;
+    background-color:var(--black-secondary);
 }
 
 .register-form-lable{

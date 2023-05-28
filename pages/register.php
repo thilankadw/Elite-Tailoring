@@ -18,7 +18,7 @@
         
       <!--Navigation Bar End-->
     </div>
-   
+   <hr><br>
     
 
     <div id="register-form">
@@ -51,8 +51,8 @@
             <lable class="register-form-lable">Re-enter password:</lable><br>
 		    <input type="password" class="register-input" name ="confirm-password" placeholder=""/><br>
             
-            <input class="register-form-btn" type="submit " name ="btn" value="Submit"/><br>
-	
+            
+            <a > <button class="register-form-btn" type="submit" name="submit" >   Register   </button></a>
         </form>
     </div>>
    
