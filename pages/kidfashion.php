@@ -27,7 +27,7 @@
               <li >|</li>
               <li><a href="womenfashion.php" class="dress-category-bar-elements">Women</a></li>
               <li>|</li>
-              <li><a href="kidfashion,php" class="dress-category-bar-elements">Kid</a></li>
+              <li><a href="#" class="dress-category-bar-elements">Kid</a></li>
               <li>|</li>
               <li><a href="youngfashion.php" class="dress-category-bar-elements">Young</a></li>
             </ul>
@@ -36,28 +36,11 @@
     <br><hr>
     <!--dress category Bar end-->
 
-    
-   <div id="banners-store">
-      <div id="store-M">
-        <p class="store-banner-text">For Men,<br>New Arrivals</p>
-        <a href="menfashion.php"> <button class="store-buttons">Purches NOW</button></a>
-      </div>
+    <p>K</p>
 
-      <div id="store-W">
-        <p class="store-banner-text">For Women,<br>New Arrivals</p>
-        <a href="womenfashion.php"> <button class="store-buttons">Purches NOW</button></a>
-      </div>
-
-      <div id="store-K">
-        <p class="store-banner-text-kids">For Kid,<br>New Arrivals</p>
-        <a href="kidfashion.php"> <button class="store-buttonK">Purches NOW</button></a>
-      </div>
-
-      <div id="store-Y">
-         <p class="store-banner-text-young">For Youngers,<br>New Arrivals</p>
-         <a href="youngfashion.php"> <button class="store-buttonY">Purches NOW</button></a>
-      </div>
-    </div> 
+    <?php
+        include 'footer.php';
+    ?>
 
     
 
