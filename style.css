@@ -191,33 +191,70 @@ nav{
 /*------dress-category-bar END------*/
 
 
-/*------Main Banner store START ------*/
+/*------Main Banners store START ------*/
 
-.main-banner-store
+#banners-store
 {
     width:full;
     margin-top: 5px;
-    height: 400px;
-    background-color: #777777;
+    height: 1300px;
+    background-color:lightblue;
     
 }
-/*------Main Banner store END ------*/
 
-
-/*------Product Display area START ------*/
-
-#product-box{
-    background-color: var(--white-primary);
-    width: 240px;
-    height: 300px;
-    display: block;
+#store-M{
+    width: 640px;
+    height: 600px;
     float: left;
     margin: 15px;
-    
+    margin-left: 20px;
+    background-image: url(C:\wamp64\www\Elite-Tailoring\Store_images\storeM.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+   
 }
 
+#store-W{
+    width: 640px;
+    height: 600px;
+    float: left;
+    margin: 15px;
+    margin-right: 16px;
+    background-image:url(C:\wamp64\www\Elite-Tailoring\Store_images\storeM.jpg\storeM.jpg\ images/storeM.jpg);
+    background-size: cover;
+    background-position: center;
+    align-items: center;
 
-/*------Product Display area START ------*/
+}
+
+#store-K{
+    width: 640px;
+    height: 600px;
+    float: left;
+    margin: 15px;
+    margin-left: 20px;
+    background-color: #d98014;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+
+#store-Y{
+    width: 640px;
+    height: 600px;
+    float: left;
+    margin: 15px;
+    margin-right: 16px;
+    background-color: #7d552f;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+}
+/*------Main Banners store END ------*/
+
+
+
 
 
 /*--------------------------------
