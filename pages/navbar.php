@@ -37,7 +37,7 @@
                 </a>
               </div>
               <div class="profile">
-                <a href="#">
+                <a href="register.php">
                   <i class="fa-solid fa-user" style="color: #3b3b3b;"></i>
                 </a>
               </div>

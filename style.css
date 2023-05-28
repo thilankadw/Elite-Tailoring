@@ -362,13 +362,92 @@ nav{
 /*------Main Banners store END ------*/
 
 
+/*------***YOUNG_Fashion CSS START*** ------*/
+
+
+/*------***YOUNG_Fashion CSS END*** ------*/
+
 
 
 
 /*--------------------------------
-        STORE CSS END
-<<<<<<< HEAD
        ****************
+        STORE CSS END
+
+       ****************
+---------------------------------*/
+
+
+/*--------------------------------
+       ***********************
+        Register_page CSS END
+
+       ***********************
+---------------------------------*/
+
+#register-form{
+    font-family: var(--primary-font);
+    align-items: center;
+    display: flex;
+    padding-left:  200px;
+    background-image: url(../Elite-Tailoring/assets/Register/regimg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.register-form-btn{
+    padding: 0.5rem;
+    font-family: var(--primary-font);
+    background-color: rgb(72, 162, 192);
+    font-weight: 700;
+    font-size: 14x;
+    border: none;
+    color: black;
+    border-radius: 7px;
+    position: relative;
+    left: 7rem;
+    margin: 1.5rem;  
+}
+
+.register-form-btn:hover{
+    font-weight: 800;
+    background-color: white;
+}
+
+.register-form-lable{
+    font-family: var(--primary-font);
+    font-size: 20px;
+    margin: 10px 0;
+    font-weight: bold 500;
+    color: var(--white-primary);
+    
+
+}
+
+.register-input{
+    font-family: var(--primary-font);
+    font-size: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+#t-and-c{
+    font-family: var(--primary-font);
+    color: var(--white-primary);
+    font-size: 14px;
+
+}
+
+
+
+
+
+/*--------------------------------
+       ***********************
+        Register_page CSS END
+
+       ***********************
 ---------------------------------*/
 
 /* Carrer page design strat*/
