@@ -10,14 +10,14 @@
     <script src="../script.js"></script>
   </head>
   <body>
-    <div>
-      <!--Navigation Bar Start-->
+    
         
-        <?php include 'navbar.php';?>
+        <?php include 'navbar.php';
+        ?>
         
 
-      <!--Navigation Bar End-->
-    </div>
+      
+    
    <h1 id="customization-title">How Customization Works</h1>
   </body>
 </html>

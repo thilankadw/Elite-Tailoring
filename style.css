@@ -30,7 +30,7 @@ nav{
     align-items: center;
     margin: 1rem;
     margin-top: 0.5rem;
-    background-color: var(--white-primary);
+   /* background-color: var(--white-primary);   */
     padding: 1rem;
 }
 .logo{
@@ -103,6 +103,22 @@ nav{
 /*--------------------------------
         Navigation bar End
 ---------------------------------*/
+
+
+
+/*--------------------------------------
+        Home Page Banner bar Start
+---------------------------------------*/
+
+.hero-banner-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------------------------------
+        Home Page Banner bar End
+---------------------------------------*/
 
 
 
@@ -259,6 +275,61 @@ nav{
 
 /*--------------------------------
         STORE CSS END
+<<<<<<< HEAD
+       ****************
+---------------------------------*/
+
+/* Carrer page design strat*/
+
+
+#fHeader{
+    text-align: center;
+}
+    
+
+ 
+ #chead{
+     text-align: center;
+ 
+ }
+ #cpara{
+
+    text-align: center;
+
+
+ }
+
+
+
+
+
+
+
+
+ 
+ #pos1{
+     display:block;
+     border:2px outset black;
+     margin: auto;
+     margin-left: 10px;
+     margin-top: 10px;
+     text-align: center;
+     padding: 10px,10px,10px,10px;
+     font-style: italic;
+ }
+ #container{
+     display:flex;
+ }
+ 
+ 
+#posBtn{
+
+    margin: auto;
+    padding: 10px,10px,10px,10px;
+}
+     
+ 
+
 ---------------------------------*/
 
 
@@ -410,3 +481,4 @@ textarea{
          FAQ Page End
 -------------------------------------*/
 
+>>>>>>> 33992cdb479a10a6377ddf4cf1540c426f6f1239
