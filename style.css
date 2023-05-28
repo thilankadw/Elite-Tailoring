@@ -30,7 +30,7 @@ nav{
     align-items: center;
     margin: 1rem;
     margin-top: 0.5rem;
-    background-color: var(--white-primary);
+   /* background-color: var(--white-primary);   */
     padding: 1rem;
 }
 .logo{
@@ -103,6 +103,22 @@ nav{
 /*--------------------------------
         Navigation bar End
 ---------------------------------*/
+
+
+
+/*--------------------------------------
+        Home Page Banner bar Start
+---------------------------------------*/
+
+.hero-banner-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*--------------------------------------
+        Home Page Banner bar End
+---------------------------------------*/
 
 
 
