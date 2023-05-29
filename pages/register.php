@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elite Tailoring Store</title>
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../elite_style.css" />
     <script src="../script.js"></script>
   
   </head>
@@ -23,7 +23,7 @@
 
     <div id="register-form">
         <form >
-            <h1>Register</h1>
+            <h1 id="register-text">Register</h1>
 
             
 		    <lable class="register-form-lable">First Name :</lable><br>
@@ -51,9 +51,15 @@
             <lable class="register-form-lable">Re-enter password:</lable><br>
 		    <input type="password" class="register-input" name ="confirm-password" placeholder=""/><br>
             
-            
-            <a > <button class="register-form-btn" type="submit" name="submit" >   Register   </button></a>
+        
+            <a > <button class="register-form-bttn" type="submit" name="submit" >Register</button></a>
+
+            <h3 id="regiter-text2">Already have account,<a href="login.php">Login here.</a></h3>
+
         </form>
+      <br><Br> <br><Br> <br><Br>
+      
+
     </div>>
    
     <?php
