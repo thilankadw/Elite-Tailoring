@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elite TailoringLogin</title>
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../elite_style.css" />
     <script src="../script.js"></script>
   
   </head>
@@ -20,22 +20,41 @@
     </div>
    <hr><br>
     
+   <section id="login_section">
 
-    <div id="login-form">
-        <form >
-            <h1 id="login-text">Login</h1>
-
-    
-            <lable class="-form-lable">E-mail:</lable><br>
-		    <input type="email" class="login-input" name ="email" placeholder="user@gmail.com"/><br>
+   <div class="login-box">   
+        <form action="" class="form-login">
+             <P id="log-txt">LOGIN</P>
+            <div class="login-input"> 
+                <span class="icon"> <ion-icon name="mail"></ion-icon></span>
+                <label>E-mail</label>
+                <input type="email"  name ="email" required/>
+                
+            </div>
         
-            <lable class="-form-lable">Password:</lable><br>
-		    <input type="password" class="login-input" name ="password" placeholder=""/><br>
-            
-            <a > <button class="" type="submit" name="submit" >   Register   </button></a>
-        </form>
-    </div>>
-   
+            <div class="login-input"> 
+                <span class="icon"> <ion-icon name="lock-closed"></ion-icon> </span>
+                <label>Password</label>
+                <input type="password"  name ="password" required/>
+                
+            </div>
+        
+            <div class="login-btn">
+                 <a > <button class="login-bttn" type="submit" name="login" >   Login   </button></a>
+            </div>
+
+            <div>
+                <p class="loginreg">Don't have an account?<a href="register.php">Register</a></p>
+
+            </div>
+
+         </form>
+    </div>
+</section>
+
+      
+
+
     <?php
         include 'footer.php';
     ?>
@@ -44,6 +63,7 @@
 
     
 
-    
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

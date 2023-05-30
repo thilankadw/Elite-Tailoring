@@ -98,6 +98,11 @@ nav{
     color: var(--black-primary);
 }
 
+.profile :hover.sub-menu{
+    display: block;
+    position: absolute;
+
+}
 
 
 /*--------------------------------
@@ -391,7 +396,7 @@ nav{
 
 /*--------------------------------
        ***********************
-        Register_page CSS END
+        Register_page CSS START
 
        ***********************
 ---------------------------------*/
@@ -477,11 +482,110 @@ nav{
        ***********************
 ---------------------------------*/
 
+/*--------------------------------
+       ***********************
+        Register_page CSS START
+
+       ***********************
+---------------------------------*/
+
+#log-txt{
+    text-align: center;
+    font-family: var(--primary-font);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#login_section{
+    
+    border-image-repeat: no-repeat;
+    background-image: url(../Elite-Tailoring/assets/home/banner-image-3.png);
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+.login-box{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background-color: transparent;
+    border-radius: 15px;
+    align-items: center;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    margin-left: 500px;
+    border: #f3f3f3 solid 2px;
+    backdrop-filter: blur(5px);
+    
+}
+
+.login-input input{
+    position: relative;
+    width: 300px;
+    margin: 25px;
+    border-bottom: white solid 2px;
+    background-color: transparent;
+    height: 25px;
+}
+
+.login-input label{
+    position: absolute;
+    font-weight: 500;
+    font-family:var(--primary-font);
+    color: black;
+
+}
+.login-input .icon{
+    position: absolute;
+    right: 120px;
+    color: white;
+}
+
+.login-bttn{
+    width: 250px;
+    justify-content: center;
+    background-color: transparent;
+    font-family: var(--primary-font);
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500 bold;
+    margin: 15px;
+    margin-left: 40px;
+    border: white solid 4px;
+    border-radius: 20px;
+}
+
+.login-bttn:hover{
+    background-color: aqua;
+    font-size: 18px;
+    box-shadow:0 0 0 4px;
+}
+
+.loginreg{
+    font-family: var(--primary-font);
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px;
+
+}
+
+/*--------------------------------
+       ***********************
+        Register_page CSS END
+
+       ***********************
+---------------------------------*/
+
+
 /* Carrer page design strat*/
 
 
 #fHeader{
-    text-align: center;
+    text-align:center;
 }
     
 
