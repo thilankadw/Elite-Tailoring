@@ -31,3 +31,20 @@ button.addEventListener("click", function(){
     document.getElementById("faq-answer-1").style.display = "none";
 })
 >>>>>>> 33992cdb479a10a6377ddf4cf1540c426f6f1239
+
+
+///--Contact Us--///
+
+function enableButton(){
+
+    var chkbx=document.getElementById("chkbx");
+
+    if(chkbx.checked==true)
+    {
+        document.getElementById("btn").disabled=false;
+    }
+
+    else{
+        document.getElementById("btn").disabled=true;
+    }
+}
