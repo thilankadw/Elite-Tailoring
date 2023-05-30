@@ -32,8 +32,8 @@
          <input type="phone"  id="input-c" name="phone"  width="100%" required><br>
     
          <label id="ld">Gender : </label><br> 
-              <input type="radio"  id="ld" name="Male" value="Male">Male
-              <input type="radio" id="ld"  name="male"  value="Male">feMale <br>
+              <input type="radio"  id="ld" name="ld" value="Male">Male
+              <input type="radio" id="ld"  name="ld"  value="Male">feMale <br>
           
           <label id="ld"  width="100%">Educational Qualifications :</label><br>
           <textarea name="eQual" id="ld" width="100%"></textarea><br>

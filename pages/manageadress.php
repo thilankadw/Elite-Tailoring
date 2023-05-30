@@ -31,7 +31,7 @@
             </ul>
         </div>
         <div>
-               <h3 id="manage-affress-header">Shipping Address</h3><br><br>
+               <h3 id="manage-address-header">Shipping Address</h3><br><br>
                <form id="manage-address-form" name="manage-address-form">
 
                <label id="manage-address-label" name="manage-address-label">Name</label>
@@ -59,7 +59,7 @@
         </div>
 
         <div>
-               <h3 id="manage-affress-header">Payment Deatils</h3><br><br>
+               <h3 id="manage-address-header">Payment Details</h3><br><br>
                <form id="manage-address-form" name="manage-address-form">
 
                <label id="manage-address-label" name="manage-address-label">Name</label>

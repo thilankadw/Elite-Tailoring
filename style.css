@@ -796,11 +796,13 @@ textarea{
 }
 
 /* manage address page css*/
-#manage-affress-header{
+#manage-address-header{
+    margin-top: 1.5rem;
     text-align: center;
-    margin-top: 0rem;
-}
+    font-family: var(--primary-font);
 
+
+}
 #manage-address-form{
     font-family: var(--primary-font);
     align-items: center;
@@ -866,7 +868,7 @@ textarea{
 #my-oders-header1{
     font-weight: 100;
 }
-/*profile css*/
+/*profile  page  css*/
 #profile-c{
     font-family: var(--primary-font);
     text-align: center;
@@ -903,7 +905,7 @@ textarea{
 
 
 }
-=======
+
 /*------------------------------------
          Contact Us Page 
 -------------------------------------*/
@@ -934,4 +936,3 @@ textarea{
 /*------------------------------------
          Login box ends
 -------------------------------------*/
->>>>>>> 288684bfb2b9a516f036b89723b38c3d7807df53
