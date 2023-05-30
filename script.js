@@ -43,16 +43,4 @@ function enableButton(){
 	}	
 		
 	
-}function enableButton(){
-	var chBox=document.getElementById("privacy");
-	
-	if(chBox.checked==true){
-		document.getElementById("sub").disabled=false;
-	}
-    else{
-		document.getElementById("sub").disabled=true;
-	}	
-		
-	
 }
-	
