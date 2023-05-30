@@ -1,0 +1,104 @@
+
+
+/*------------------------------------
+        Sign Up 
+-------------------------------------*/
+
+.signUp{
+    background-image: url(../Elite-Tailoring/assets/SignupLogin/sign.webp);
+    background-color: white;
+    padding:20px;
+}
+
+#h1sign{
+    color:white;
+    text-align: center;
+}
+#h4sign{
+    color:white;
+    text-align: center;
+}
+
+
+.txts{
+    color:rgb(2, 2, 2);
+    text-align: left;
+    width:50%;
+    height: 24px;
+    margin: auto;
+
+}
+
+#btns{
+    size: 100px;
+    margin-top: 3%;
+     padding: auto;
+     color: rgb(255, 255, 255);
+     background-color: rgb(162, 222, 229);
+ }
+
+ .para{
+    color:rgb(243, 236, 236);
+    width:50%;
+    height: 24px;
+    margin: auto;
+
+ }
+/*------------------------------------
+         Sign Up End
+-------------------------------------*/
+
+/*------------------------------------
+        Login 
+-------------------------------------*/
+
+.Login{
+    background-image: url(../Elite-Tailoring/assets/SignupLogin/sign.webp);
+    background-color: white;
+    padding:20px;
+}
+#h1log{
+    color:white;
+    text-align: center;
+}
+.txtu{
+    color:rgb(2, 2, 2);
+    background-color: rgb(248, 245, 240);
+    text-align: left;
+    width:50%;
+    height: 24px;
+    margin: auto;
+
+}
+
+#btnl{
+    size: 100px;
+    margin-top: 3%;
+     padding: auto;
+     color: rgb(255, 255, 255);
+     background-color: rgb(162, 222, 229);
+}
+/*------------------------------------
+         Login End
+-------------------------------------*/
+
+/*------------------------------------
+         Contact Us
+-------------------------------------*/
+#ContactusForm{
+    color:#aee3e4;
+    text-align: center;
+    padding: 20px;
+    display: block;
+    margin-left: 30%;
+    margin-right:30%;
+   
+}
+#contactHead{
+    
+    text-align: center;
+}
+
+/*------------------------------------
+         Contact Us End
+-------------------------------------*/

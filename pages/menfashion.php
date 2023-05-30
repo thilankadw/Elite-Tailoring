@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elite Tailoring Store</title>
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../elite_style.css" />
     <script src="../script.js"></script>
   
   </head>
@@ -21,15 +21,15 @@
    
     <!--dress category Bar Start-->
     
-        <div class="dress-category-bar">
+        <div class="dress-category-bars">
             <ul>
-              <li><a href="#" class="dress-category-bar-elements">Men</a></li>
+              <li><a href="#" class="dress-category-bars-elements">Men</a></li>
               <li >|</li>
-              <li><a href="womenfashion.php" class="dress-category-bar-elements">Women</a></li>
+              <li><a href="womenfashion.php" class="dress-category-bars-elements">Women</a></li>
               <li>|</li>
-              <li><a href="kidfashion.php" class="dress-category-bar-elements">Kid</a></li>
+              <li><a href="kidfashion.php" class="dress-category-bars-elements">Kid</a></li>
               <li>|</li>
-              <li><a href="younfashion.php" class="dress-category-bar-elements">Young</a></li>
+              <li><a href="younfashion.php" class="dress-category-bars-elements">Young</a></li>
             </ul>
         </div>
     
