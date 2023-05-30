@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elite Tailoring Store</title>
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../elite_style.css" />
     <script src="../script.js"></script>
   
   </head>
@@ -39,29 +39,29 @@
     
    <div id="banners-store">
       <div id="store-M">
-        <p class="store-banner-text">For Men,<br>New Arrivals</p>
-        <a href="menfashion.php"> <button class="store-buttons">Purches NOW</button></a>
+        <p class="store-banner-txt">For Men,<br>New Arrivals</p>
+        <a href="menfashion.php"> <button class="store-buttonMW">Purches NOW</button></a>
       </div>
 
       <div id="store-W">
-        <p class="store-banner-text">For Women,<br>New Arrivals</p>
-        <a href="womenfashion.php"> <button class="store-buttons">Purches NOW</button></a>
+        <p class="store-banner-txt">For Women,<br>New Arrivals</p>
+        <a href="womenfashion.php"> <button class="store-buttonMW">Purches NOW</button></a>
       </div>
 
       <div id="store-K">
-        <p class="store-banner-text-kids">For Kid,<br>New Arrivals</p>
-        <a href="kidfashion.php"> <button class="store-buttonK">Purches NOW</button></a>
+        <p class="store-banner-text-kid">For Kid,<br>New Arrivals</p>
+        <a href="kidfashion.php"> <button class="store-buttonKid">Purches NOW</button></a>
       </div>
 
       <div id="store-Y">
          <p class="store-banner-text-young">For Youngers,<br>New Arrivals</p>
-         <a href="youngfashion.php"> <button class="store-buttonY">Purches NOW</button></a>
+         <a href="youngfashion.php"> <button class="store-buttonYoung">Purches NOW</button></a>
       </div>
     </div> 
 
     
 
-    
+
 
     
   </body>

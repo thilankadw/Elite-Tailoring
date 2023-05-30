@@ -209,9 +209,9 @@ nav{
 
 /*------Main Banners store START ------*/
 
-.store-banner-text{
+.store-banner-txt{
     font-family: var(--primary-font);
-    font-size: 65px;
+    font-size: 25px;
     font-weight: 600;
     background-position: center;
     display: grid;
@@ -222,7 +222,7 @@ nav{
     margin-left: 40px;
 }
 
-.store-banner-text-kids{
+.store-banner-text-kid{
     font-family: var(--primary-font);
     font-size: 25px;
     font-weight: 600;
@@ -231,8 +231,8 @@ nav{
     grid-template-columns: repeat(1,1fr);
     align-items: center;
     background-size: cover;
-    margin-top: 125px;
-    margin-left: 450px;
+    margin-top: 110px;
+    margin-left: 480px;
 }
 
 .store-banner-text-young{
@@ -248,66 +248,77 @@ nav{
     margin-left: 450px;
 }
 
-.store-buttons{
+.store-buttonMW{
     font-family: var(--primary-font);
     font-weight: 500;
     text-transform: capitalize;
     text-decoration: none;
     display: inline-block;
     border: 2px solid;
-    color: var(--black-primary);
+    color:black;
+    font-size: 18px;
     align-items: center;
     background-position: center;
     margin-top: 10px;
-    margin-left: 400px;
-    background-color: var(--white-secondary);
+    margin-left: 40px;
+    background: transparent;
+    outline: 2px solid var(--white-secondary);
 }
-.store-buttonK{
+.store-buttonKid{
+    font-family: var(--primary-font);
+    font-weight: 500;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-size: 18px;
+    display: inline-block;
+    border: 2px solid;
+    color: black;
+    align-items: center;
+    background-position: center;
+    margin-top: 5px;
+    margin-left: 480px;
+    background: transparent;
+    outline: 2px solid var(--white-secondary);
+}
+
+
+.store-buttonYoung{
     font-family: var(--primary-font);
     font-weight: 500;
     text-transform: capitalize;
     text-decoration: none;
     display: inline-block;
     border: 2px solid;
-    color: var(--black-primary);
+    color: black;
+    font-size: 18px;
     align-items: center;
     background-position: center;
     margin-top: 10px;
     margin-left: 450px;
-    background-color: var(--white-secondary);
-}
-
-.store-buttonY{
-    font-family: var(--primary-font);
-    font-weight: 500;
-    text-transform: capitalize;
-    text-decoration: none;
-    display: inline-block;
-    border: 2px solid;
-    color: var(--black-primary);
-    align-items: center;
-    background-position: center;
-    margin-top: 10px;
-    margin-left: 450px;
-    background-color: var(--white-secondary);
+    background: transparent;
+    outline: 2px solid var(--white-secondary);
 }
 
 
-.store-buttons:hover{
+
+.store-buttonMW:hover{
     font-weight: 550;
     font-family: var(--primary-font);
     font-size: 22px;
+    box-shadow:0 0 0 4px;
     
 }
-.store-buttonK:hover{
+.store-buttonKid:hover{
     font-weight: 550;
     font-family: var(--primary-font);
     font-size: 22px;
+    box-shadow:0 0 0 4px;
 }
-.store-buttonY:hover{
+.store-buttonYoung:hover{
     font-weight: 550;
     font-family: var(--primary-font);
     font-size: 22px;
+    box-shadow:0 0 0 4px;
 }
 
 #store-M{
@@ -393,34 +404,37 @@ nav{
     background-image: url(../Elite-Tailoring/assets/Register/regimg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 800px;
     
 }
 
 #register-text{
     color:var(--white-secondary);
     font-family: var(--primary-font);
-
+    font-size: 25px;
+    font-weight: 450;
+    margin: 20px;
 }
 
-.register-form-btn{
-    padding: 0.5rem;
-    font-family: var(--primary-font);
-    background-color: rgb(72, 162, 192);
-    font-weight: 700;
-    font-size: 18x;
-    border: none;
-    color: black;
-    border-radius: 7px;
-    position: relative;
-    left: 7rem;
-    margin: 1.5rem;  
-    width: 250px;
-
+.register-form-bttn{
+   width: 200px;
+   font-size: 18px;
+   border-radius: 7px;
+   background: transparent;
+   outline: 2px solid var(--white-secondary);
+   border: none;
+   color: var(--white-secondary);
+  padding: 5px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  font-weight: 300;
+ transition: 0.2s;
 }
 
-.register-form-btn:hover{
-    font-weight: 800;
-    background-color:var(--black-secondary);
+.register-form-bttn:hover{
+    font-weight: 600;
+    background-color:transparent;
+    box-shadow:0 0 0 4px;
 }
 
 .register-form-lable{
@@ -449,8 +463,9 @@ nav{
 
 #regiter-text2{
     font-family: var(--primary-font);
-    color: whi;
+    color: var(--white-secondary);
     font-size: 14px;
+    font-weight: 200;
 }
 
 
@@ -491,120 +506,29 @@ nav{
 
  
  #pos1{
-    font-family: var(--primary-font);
-    font-style: italic;
-     width: 640px;
-     height: 600px;
-     float: left;
-     margin: 15px;
-     margin-left: 20px;
-     background-image: url(../Elite-Tailoring/images/img1.jpeg);
-     background-size: cover;
-     background-position: center;
-     align-items: center;
- }
- #pos2{
-    font-family: var(--primary-font);
-    font-style: italic;
-     width: 640px;
-     height: 600px;
-     float: left;
-     margin: 15px;
-     margin-left: 20px;
-     background-image: url(../Elite-Tailoring/images/img2.jpeg);
-     background-size: cover;
-     background-position: center;
-     align-items: center;
- }
- #pos3{
-    font-family: var(--primary-font);
-    font-style: italic;
-     width: 640px;
-     height: 600px;
-     float: left;
-     margin: 15px;
-     margin-left: 20px;
-     background-image: url(../Elite-Tailoring/images/img3.jpeg);
-     background-size: cover;
-     background-position: center;
-     align-items: center;
- }
- #pos4{
-    font-family: var(--primary-font);
-    font-style: italic;
-     width: 640px;
-     height: 600px;
-     float: left;
-     margin: 15px;
-     margin-left: 20px;
-     background-image: url(../Elite-Tailoring/images/img4.jpeg);
-     background-size: cover;
-     background-position: center;
-     align-items: center;
+     display:block;
+     border:2px outset black;
+     margin: auto;
+     margin-left: 10px;
+     margin-top: 10px;
+     text-align: center;
+     padding: 10px,10px,10px,10px;
+     font-style: italic;
  }
  #container{
-    display:flex;
- 
-}
-
+     display:flex;
+ }
  
  
 #posBtn{
 
-    padding: 0.5rem;
-    font-family: var(--primary-font);
-    background-color: rgb(82, 83, 83);
-    font-weight: 700;
-    font-size: 18x;
-    border: none;
-    color: rgb(239, 242, 243);
-    border-radius: 7px;
-    position: relative;
-
-    margin: 1.5rem;  
-    width: 250px;
+    margin: auto;
+    padding: 10px,10px,10px,10px;
 }
-#formSubmit{
-    font-family: var(--primary-font);
-    align-items: center;
-    display: flex;
-    padding-left:  200px;
-    background-image: url(../Elite-Tailoring/images/background1.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}     
- #btnSubmit{
-    padding: 0.5rem;
-    font-family: var(--primary-font);
-    background-color: rgb(72, 162, 192);
-    font-weight: 700;
-    font-size: 18x;
-    border: none;
-    color: black;
-    border-radius: 7px;
-    position: relative;
-    left: 7rem;
-    margin: 1.5rem;  
-    width: 250px;
+     
+ 
 
-
- }
- #input-c{
-
-    font-family: var(--primary-font);
-    font-size: 15px;
-    margin: 10px 0;
-    border-radius: 5px;
-
- }
- #ld{
-    font-family: var(--primary-font);
-    font-size: 20px;
-    margin: 10px 0;
-    font-weight: bold 500;
-    color: var(--white-primary);
-}
-/*---------------------------------*/
+---------------------------------*/
 
 
 
