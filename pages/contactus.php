@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elite Tailoring</title>
     <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../uvinducss.css" />
     <script src="../script.js"></script>
 
     <!--Font_Awesome library importing-->
@@ -49,9 +50,9 @@
 <!--Contact Us form -->
 
     <div id="ContactusForm">
-      <h1 class="cHead">
-      Contact Us   <br><br>
-      </h1>
+      <h1 id="cHead">
+      Contact Us   
+      </h1><br><br>
 
 <form action="" method="post" >
 <label>First Name</label><br>
