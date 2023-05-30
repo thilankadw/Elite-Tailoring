@@ -181,32 +181,33 @@ nav{
 
 /*------dress-category-bar START------*/
 
-.dress-category-bar{
+.dress-category-bars{
     display: flex;
-    justify-content: left;
-    align-items: left;
+    justify-content: center;
+    align-items: center;
     width: 80%;
     font-family: var(--primary-font);
     font-size: 20px;
-    margin-left: 30px;
+    margin-left: 150px;
 }
-.dress-category-bar li{
+.dress-category-bars li{
     list-style: none;
     padding: 1.5rem;
     padding-top: 0rem;
     padding-bottom: 0rem;
+    display: inline-block;
 }
-.dress-category-bar ul{
+.dress-category-bars ul{
     display: flex;
     justify-content: space-between; 
 }
-.dress-category-bar-elements{
+.dress-category-bars-elements{
     text-decoration: none;
     color: var(--black-secondary);
     font-weight: 400;
     padding: 1rem;
 }
-.dress-category-bar-elements:hover{
+.dress-category-bars-elements:hover{
     color: var(--black-primary);
 }
 /*------dress-category-bar END------*/
@@ -424,7 +425,7 @@ nav{
 .register-form-bttn{
    width: 200px;
    font-size: 18px;
-   border-radius: 7px;
+   border-radius: 20px;
    background: transparent;
    outline: 2px solid var(--white-secondary);
    border: none;
@@ -457,7 +458,10 @@ nav{
     font-size: 15px;
     margin: 10px 0;
     border-radius: 5px;
+    width: 400px;
 }
+
+
 
 #t-and-c{
     font-family: var(--primary-font);
@@ -505,6 +509,7 @@ nav{
     align-items: center;
     min-height: 100vh;
     padding: 50px;
+    display: block;
 }
 
 .login-box{
