@@ -6,11 +6,8 @@
 
 .signUp{
     background-image: url(../Elite-Tailoring/assets/SignupLogin/sign.webp);
-    text-align: center;
-    padding: 20px;
-    display: block;
-    width:auto;
-    height:410px;
+    background-color: white;
+    padding:20px;
 }
 
 #h1sign{
@@ -57,12 +54,8 @@
 
 .Login{
     background-image: url(../Elite-Tailoring/assets/SignupLogin/sign.webp);
-    color: rgb(237, 235, 240);
-    text-align: center;
-    padding: 20px;
-    display: block;
-    width:auto;
-    height:410px;
+    background-color: white;
+    padding:20px;
 }
 #h1log{
     color:white;
@@ -92,15 +85,17 @@
 /*------------------------------------
          Contact Us
 -------------------------------------*/
-.ContactusForm{
+#ContactusForm{
+    color:#aee3e4;
     text-align: center;
     padding: 20px;
     display: block;
-    width:auto;
-    height:410px;
+    margin-left: 30%;
+    margin-right:30%;
+   
 }
-#cHead{
-    color:white;
+#contactHead{
+    
     text-align: center;
 }
 
