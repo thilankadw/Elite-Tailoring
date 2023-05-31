@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../uvinducss.css" />
     <script src="../script.js"></script>
-	
+	  <script src="../uvinduscript.js"></script>
 
     <!--Font_Awesome library importing-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -50,9 +50,11 @@
 
 
     <div class="signUp">
-<h1 id="h1sign">Sign Up</h1><br>
-<h4 id="h4sign">It's free only take few minutes</h4><br>
-<form  action="" method="post"  onsubmit="return checkSignPassword()">
+
+<form  action="" method="post" class="uvindusign"  onsubmit="return checkSignPassword()">
+
+<h1 >Sign Up</h1><br>
+<h4 >It's free only take few minutes</h4><br>
 
    <label>First Name</label>
    <input type="text" id="fname" name="fname" class="txts" required><br>
@@ -72,12 +74,13 @@
    <label>Accept privacy policy terms</label>
     <input type="checkbox" id="chkbxsign" name="chkbxsign" onclick="enableButtonSign()" required><br><br>
 
-   <input type="button" value="SignUp" id="btnsign"  disabled>
-
+   <input type="button" value="SignUp" class="btnsign"  disabled>
+   
+   <br><br><p class="para">Already have an account? <a href="uvindulogin.php">Log In</a></p>
 
 </form>
 
-<br><br><p class="para">Already have an account? <a href="uvindulogin.php">Log In</a></p>
+
 </div>
 
      <!--Footer Start-->

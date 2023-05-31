@@ -48,9 +48,11 @@
     </div>
 
     <div class="Login">
-<h1 id="h1log">Login</h1><br>
 
-<form>
+
+<form action="" method="post" class="uvindulogin">
+    
+   <h1 id="h1log">Login</h1><br>
 
    <label>Username</label>
    <input type="text" id="fname" name="fname" class="txtu"><br>
@@ -58,12 +60,12 @@
    <label>Password</label>
    <input type="password" id="pass" name="pass" class="txtu"><br>
 
-   <input type="button" value="Login" id="btnl">
+   <input type="button" value="Login" class="btnl">
 
-
+   <br><br><p class="logpara">Not a member? <a href="signup.php">Sign Up</a></p>
 </form>
 
-<br><br><p class="para">Not a member? </p><a href="signup.php">Sign Up</a>
+
 </div>
 
      <!--Footer Start-->
