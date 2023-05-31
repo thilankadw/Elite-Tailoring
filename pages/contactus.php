@@ -54,18 +54,18 @@
       Contact Us   
       </h1><br><br>
 
-<form action="" method="post" >
+<form action="connect.php" method="post" >
 <label>First Name</label><br>
-<input type="text" id="fname" name="fname"  class="txtf" required><br><br>
+<input type="text" id="fname" name="fname"  class="txtcn" required><br><br>
 
 <label>Last Name</label><br>
-<input type="text" id="lname" name="lname"  class="txtf" required><br><br>
+<input type="text" id="lname" name="lname"  class="txtcn" required><br><br>
 
 <label >Mobile Number</label><br>
-<input type="number" id="Mno" name="Mno" class="txtf" required><br><br>
+<input type="number" id="Mno" name="Mno" class="txtcn" required><br><br>
 
 <label>Email</label><br>
-<input type="email" id="email" name="email" class="txtf"  required><br><br>
+<input type="email" id="email" name="email" class="txtcn"  required><br><br>
 
 <label>Message</label><br>
 <textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>

@@ -99,6 +99,16 @@
     text-align: center;
 }
 
+.txtcn{
+    color:rgb(2, 2, 2);
+    background-color: rgb(248, 245, 240);
+    text-align: left;
+    width:50%;
+    height: 35px;
+    margin: auto;
+
+}
+
 /*------------------------------------
          Contact Us End
 -------------------------------------*/
