@@ -1,0 +1,698 @@
+/*---Importing Font Families---*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600&family=Poppins:wght@200;300;400;500;600;700;800&family=Raleway:wght@200;300;400;500;600&display=swap');
+
+:root{
+    /*---font families---*/
+    --primary-font: Poppins;
+    --secondary-font: Jost;
+    --third-font: Raleway;
+
+    /*---Colors---*/
+    --black-primary: #111212;
+    --black-secondary: #2e2e2d;
+    --grey-primary: #d4d0d0;
+    --grey-secondary: #575757;
+    --grey-third: #6e6e6e;
+    --grey-fourth: #636363;
+    --blue-primary: #0037ad;
+    --white-primary: #ffffff;
+    --white-secondary: #ebebeb;
+    --red-primary: #f51307;
+    
+    
+    box-sizing: border-box;
+}
+
+/*---------------------------------------
+        Navigation bar styles
+-----------------------------------------*/  
+a{
+    text-decoration: none;
+    color: var(--black-primary);
+}
+button{
+    background: none;
+    border: none;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    font-family: var(--secondary-font);
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.nav-upper-section{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--grey-primary);
+    
+}
+.nav-wishlit-btn{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.nav-middle-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+}
+.nav-logo{
+    flex: 2;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.nav-searchbar{
+    flex: 3;
+}
+.nav-middle-section .nav-searchbar input{
+    outline: none;
+    border: none;
+    width: 20rem;
+    border-bottom: 1px solid var(--black-primary);
+    font-family: var(--secondary-font);
+}
+.nav-middle-section .nav-searchbar input::placeholder{
+    font-family: var(--secondary-font);
+    font-size: 1rem;
+}
+.nav-menu{
+    flex: 3;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-menu a{
+    font-weight: 500;
+}
+
+
+/*------------------------------------
+            Login Page
+------------------------------------*/
+.login-popup-container{
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.25);
+    width: 380px;
+    padding: 20px 30px;
+    background: #fff;
+    box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+    transition: top 0ms ease-in-out 200ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+    z-index: 99;
+}
+.login-popup-active {
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: top 0ms ease-in-out 0ms,
+                opacity 200ms ease-in-out 0ms,
+                transform 200ms ease-in-out 0ms;
+}
+.login-popup-container .login-close-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.login-form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.login-form h2{
+    font-family: var(--secondary-font);
+    text-align: center;
+}
+.login-form-element label{
+    font-family: var(--secondary-font);
+}
+.login-form-element input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--grey-primary);
+    font-family: var(--secondary-font);
+}
+#login-password{
+    margin-top: 1rem;
+}
+#remember-me{
+    border: none;
+}
+.login-form-element a{
+    font-family: var(--secondary-font);
+}
+.login-form-element input[type="text"]{
+    margin-bottom: 1rem;
+}
+.login-form-element input[type="text"],
+.login-form-element input[type="email"],
+.login-form-element input[type="password"] {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.login-form-element input[type="checkbox"] {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    
+}
+.login-form-element input[type="submit"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: var(--black-primary);
+    color: var(--grey-primary);
+    font-size: 1.3rem;
+}
+
+
+/*-------------------------------------
+            Register Form
+-------------------------------------*/
+.register-form-display{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 30rem;
+}
+#register-btn{
+    margin-top: 2rem;
+}
+
+/*----------------------------------------
+        Navigation Styles End
+-----------------------------------------*/
+
+/*--------------------------------------------
+        Customizatio Giude Styles Start
+---------------------------------------------*/ 
+
+.customization-guide-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    font-family: var(--secondary-font);
+}
+.customization-guide-title{
+    margin-bottom: 1rem;
+}
+.customization-guide-container .customization-guide-title h1{
+    color: var(--black-secondary);
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+}
+.customization-guide-contetnt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.customization-guide-contetnt .customization-guide-images img{
+    width: 50%;
+}
+.customization-guide-images{
+    width: 50%;
+    
+}
+.right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.left p{
+    text-align: right;
+}
+.left h3{
+    text-align: right;
+}
+.customization-guide-contetnt .customization-guide-content-text{
+    width: 50%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.customization-guide-contetnt .customization-guide-content-text h3{
+    color: var(--black-secondary);
+    font-size: 2rem;
+    margin: 0rem;
+    font-weight: 400;
+}
+.customization-guide-contetnt .customization-guide-content-text p{
+    font-size: 1.3rem;
+    width: 50%;
+    color: var(--grey-third);
+}
+.customization-guide-contetnt .customization-guide-content-text a{
+    text-decoration: underline;
+    font-size: 1.3rem;
+    color: var(--grey-fourth);
+}
+.customization-guide-footer-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+.customization-guide-footer-image img{
+    width: 70%;
+}
+
+/*--------------------------------------------
+        Customizatio Giude Styles End
+---------------------------------------------*/
+
+
+
+/*---------------------------------------
+        Footer Styles start
+-----------------------------------------*/ 
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-top: 1px solid var(--grey-third);
+}
+footer h6{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--black-primary);
+    position: relative;
+    top: 1rem;
+}
+footer a, p{
+    font-size: 0.9rem;
+}
+.footer-contact, .footer-orders, .footer-policies, .footer-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin: 2rem;
+    font-family: var(--primary-font);
+}
+.footer-contact p{
+    margin: 0rem;
+    padding: 0rem;
+}
+
+
+/*---------------------------------------ss
+        Footer Styles End
+-----------------------------------------*/ 
+
+
+/*---------------------------------------
+        Shopping Cart Styles start
+-----------------------------------------*/ 
+
+.shoppingcart-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    font-family: var(--primary-font);
+    margin-top: 3rem;
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+}
+.view-aded-products{
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    background-color: var(--white-secondary);
+}
+.shoppingcart-title-line{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    border-bottom: 1px solid var(--black-primary);
+}
+.shoppingcart-title-line h6{
+    font-size: 1rem;
+    margin-right: 2rem;
+    font-weight: 500;
+}
+.shopingcart-product-details-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.shoppingcart-product-image{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shoppingcart-product-image img{
+    width: 50%;
+}
+.shoppingcart-product-details{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+.shoppingcart-product-details-attributes{
+    display: flex;
+}
+.attribute-name{
+    font-weight: 500;
+    margin-right: 0.3rem;
+
+}
+.shoppingcart-product-details-price{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.shoppingcart-product-details-quantity{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.view-total-amount{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem;
+    width: 25%;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    background-color: var(--white-secondary);
+    height: 20rem;
+}
+.view-total-amount button[type=submit]{
+    background-color: var(--red-primary);
+    outline: none;
+    border: none;
+    padding: 1rem;
+    font-family: var(--primary-font);
+    font-size: 1rem;
+    margin: 1rem;
+    width: 90%;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    cursor: pointer;
+}
+.view-total-amount button a{
+    color: var(--white-primary);
+}
+.shoppingcart-pricing{
+    display: flex;
+    justify-content: flex-start;
+}
+.shoppingcart-pricing-attribute-name{
+    margin-right: 3rem;
+}
+/*---------------------------------------
+        Shopping Cart Styles End
+-----------------------------------------*/ 
+
+
+/*---------------------------------------
+        Online Store Styles Start
+-----------------------------------------*/ 
+
+
+.store-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: var(--primary-font);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.store-filter-section{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid var(--black-secondary);
+    margin-top: 0.9rem;
+}
+.store-filter-section form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.store-filter-title{
+    font-size: 1.1rem;
+    color: var(--black-secondary);
+    border-bottom: 1px solid var(--black-secondary);
+}
+#select-color-title{
+    display: block;
+}
+.store-filter-section form input[type=submit]{
+    background-color: var(--black-secondary);
+    color: var(--white-primary);
+    font-size: 0.9rem;
+    border: none;
+    outline: none;
+    font-family: var(--primary-font);
+    padding: 0.5rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    margin-top: 1rem;
+    width: 7rem;
+}
+.form-colors, .form-sizes{
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.filter-form-single-color, .filter-form-single-size{
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+.store-product-display{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-left: 1.8rem;
+}
+.store-product-card{
+    background-color: var(--white-secondary);
+    width: 30%;
+    height: 28rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2.3rem;
+}
+.store-product-card-image{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.store-product-card-image img{
+    width: 13.9rem;
+    height: 20rem;
+}
+.store-product-card-name{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+}
+.store-product-card-pricing{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+.store-product-card-cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.store-product-card-cart a{
+    margin-left: 1.5rem;
+}
+
+/*---------------------------------------
+        Online Store Styles End
+-----------------------------------------*/
+
+/*---------------------------------------
+        Return Policy Styles Start
+-----------------------------------------*/ 
+
+.return-policy-container{
+    font-family: var(--secondary-font);
+    margin: 3rem;
+}
+.return-policy-main-title{
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.5rem;
+}
+.return-policy-content{
+    font-size: 1rem;
+}
+.return-policy-tittle{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+/*---------------------------------------
+        Return Policy Styles End
+-----------------------------------------*/ 
+
+
+/*-------------------------------------------
+        Product Details Styles Start
+--------------------------------------------*/ 
+
+.product-details-container{
+    margin: 2rem auto;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: var(--primary-font);
+}
+.product-details-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.product-details-image img{
+    width: 30rem;
+}
+.product-details-content{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+.product-details-content-name h4{
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-top: 0rem;
+}
+.product-details-content-price{
+    position: relative;
+    top: -1.5rem;
+}
+.product-details-content-price-price{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+.product-details-content-colors{
+    margin-bottom: 1.5rem;
+    width: 33rem;
+
+}
+.product-details-content-colors form input[type="submit"]{
+    background-color: var(--black-secondary);
+    border: none;
+    outline: none;
+    font-family: var(--primary-font);
+    color: var(--white-primary);
+    padding: 0.5rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    display: block;
+    margin-top: 0.5rem;
+    width: 8rem;
+}
+.product-details-order-type{
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--black-secondary);
+    padding-top: 1rem;
+    border-top: 1px solid var(--black-secondary);
+    width: 20rem;
+    
+}
+.product-details-order-type button{
+    background-color: var(--black-secondary);
+    color: var(--white-primary);
+    padding: 0.5rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    margin-right: 1.5rem;
+    width: 8rem;
+    font-family: var(--primary-font);
+}
+.product-details-content-sizes{
+    width: 33rem;
+    margin-bottom: 1.5rem;
+}
+.product-details-content-sizes form input[type="submit"]{
+    background-color: var(--black-secondary);
+    border: none;
+    outline: none;
+    font-family: var(--primary-font);
+    color: var(--white-primary);
+    padding: 0.5rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    display: block;
+    margin-top: 0.5rem;
+    width: 8rem;
+    
+}
+.product-details-content-custom-sizes{
+    margin-bottom: 1rem;
+}
+.product-details-content-custom-sizes a{
+    text-decoration: underline;
+    font-family: var(--primary-font);
+}
+.product-details-content-addtocart button{
+    background-color: var(--black-primary);
+    padding: 0.5rem;
+    color: var(--white-primary);
+    width: 14rem;
+    height: 2.8rem;
+    font-family: var(--primary-font);
+    font-size: 1rem;
+}
+
+
+/*---------------------------------------
+        Product Details Styles End
+-----------------------------------------*/ 
