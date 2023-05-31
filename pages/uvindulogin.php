@@ -48,7 +48,7 @@
     </div>
 
     <div class="Login">
-<h1 id="h1log">Login</h1>
+<h1 id="h1log">Login</h1><br>
 
 <form>
 
@@ -63,7 +63,7 @@
 
 </form>
 
-<br><br><p class="para">Not a member? </p><a href="signup.php">Click Here</a>
+<br><br><p class="para">Not a member? </p><a href="signup.php">Sign Up</a>
 </div>
 
      <!--Footer Start-->

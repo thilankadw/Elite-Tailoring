@@ -5,17 +5,23 @@
 -------------------------------------*/
 
 .signUp{
-    background-image: url(../Elite-Tailoring/assets/SignupLogin/sign.webp);
-    background-color: white;
-    padding:20px;
+  
+    background-color: #f5f5dc;
+    padding:10px;
+	margin-top:5%;
+	margin-bottom:5%;
+	margin-right:30%;
+	margin-left:30%;
+	text-align:center; 
 }
 
 #h1sign{
-    color:white;
+    color:#000000;
     text-align: center;
+	text-decoration:sans;
 }
 #h4sign{
-    color:white;
+    color:#000000;
     text-align: center;
 }
 
@@ -38,7 +44,7 @@
  }
 
  .para{
-    color:rgb(243, 236, 236);
+    color:#000000;
     width:50%;
     height: 24px;
     margin: auto;
@@ -53,13 +59,19 @@
 -------------------------------------*/
 
 .Login{
-    background-image: url(../Elite-Tailoring/assets/SignupLogin/sign.webp);
-    background-color: white;
-    padding:20px;
+     background-image: url(../Elite-Tailoring/assets/SignupLogin/sign.webp);
+    background-color: #f5f5dc;
+    padding:10px;
+	margin-top:5%;
+	margin-bottom:5%;
+	margin-right:30%;
+	margin-left:30%;
+	text-align:center; 
 }
 #h1log{
-    color:white;
+    color:#000000;
     text-align: center;
+	text-decoration:sans;
 }
 .txtu{
     color:rgb(2, 2, 2);
@@ -86,17 +98,18 @@
          Contact Us
 -------------------------------------*/
 #ContactusForm{
-    color:#aee3e4;
-    text-align: center;
-    padding: 20px;
-    display: block;
-    margin-left: 30%;
-    margin-right:30%;
+     background-color: #f5f5dc;
+    padding:10px;
+	margin-top:5%;
+	margin-bottom:5%;
+	margin-right:30%;
+	margin-left:30%;
+	text-align:center; 
    
 }
 #contactHead{
     
-    text-align: center;
+    text-align: left;
 }
 
 .txtcn{
