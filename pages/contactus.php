@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="../uvinducss.css" />
     <script src="../script.js"></script>
-    <script src="../uvinduscript.js"></script>
+    
     <!--Font_Awesome library importing-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -50,11 +50,14 @@
 <!--Contact Us form -->
 
     <div id="ContactusForm">
-      <h1 id="contactHead">
+      
+
+<form action="connect.php" method="post" class="uvinduContact">
+
+<h1 id="contactHead">
       Contact Us   
       </h1><br><br>
 
-<form action="connect.php" method="post" >
 <label>First Name</label><br>
 <input type="text" id="fname" name="fname"  class="txtcn" required><br><br>
 
@@ -68,12 +71,12 @@
 <input type="email" id="email" name="email" class="txtcn"  required><br><br>
 
 <label>Message</label><br>
-<textarea id="address" name="address" rows="4" cols="50" required></textarea><br><br>
+<textarea id="address" name="address" rows="4" cols="50" class="txtcn" required></textarea><br><br>
 
 <label>Accept privacy policy terms</label>
 <input type="checkbox" id="chkbx" name="chkbx" onclick="enableButton()" required><br><br>
 
-<input type="submit" value="Submit" id="btn"  >
+<input type="submit" value="Submit" class="conbtn"  >
 
         
       </form>
