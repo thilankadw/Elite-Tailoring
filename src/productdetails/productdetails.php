@@ -1,5 +1,24 @@
+<?php session_start(); ?>
+
+<!--Database Connection -->
+<?php include "../inc/connection.php"; ?>
+
+<?php
+
+$product_id = $_GET['product_id'];
+$_SESSION['selected_product'] = $product_id;
+
+
+$query = "SELECT * FROM product WHERE product_id = '{$product_id}'";
+$row = mysqli_query($conn, $query);
+$product_details = mysqli_fetch_assoc($row);
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,55 +30,53 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+
 <body>
 
     <!-- Importing Navbar -->
-    <?php include "../navbar/navbar.php" ?>
+    <?php include "../header/header.php" ?>
 
 
     <div class="product-details-container">
 
         <div class="product-details-image">
-            <img src="../assets/customization/customizationguideimg-2.jpg" alt="">
+            <img src="<?php echo $product_details['product_img_path'] ?>" alt="">
         </div>
 
         <div class="product-details-content">
             <div class="product-details-content-name">
-                <h4>Ruched Pocket Cotton Poplin Elastic Waist Skirt</h4>
+                <h4><?php echo $product_details['product_name'] ?></h4>
             </div>
             <div class="product-details-content-price">
-                <p class="product-details-content-price-price">$ 43.95</p>
+                <p class="product-details-content-price-price">$ <?php echo $product_details['product_price'] ?></p>
             </div>
             <div class="product-details-content-colors">
-                <form action="">
-                    <input type="radio" name="color">
-                    <label for="">Red</label>
+                <p class='product-details-content-colors-title'>Color : <span class='product-details-content-colors-name'>Blue</span></p>
+            </div>
 
-                    <input type="submit" value="Select Color">
+            <div id="product-details-content-sizes">
+                <form action="../inc/submitshoppingcart.php?product_id = <?php echo $product_id; ?>" method="POST">
+                    <input type="radio" name="type" value="custom">
+                    <label for="">Custom Size</label>
+                    <input type="radio" name="type" value="Standard">
+                    <label for="" id="standard-label">Standard Size</label>
+
+                    <input type="number" name="quantity" value="1">
+
+                    <input type="submit" value="ADD TO CART" name="order_type">
                 </form>
+
             </div>
 
-            <div class="product-details-order-type">
-                <button id="standard-size">Standard Size</button>
-                <button id="custom-size">Custom Size</button>
-            </div>
-
-            <div class="product-details-content-sizes">
-                <form action="">
-                    <input type="radio" name="size">
-                    <label for="">S</label>
-
-                    <input type="submit" value="Select Size">
-                </form>
-            </div>
-
-            <div class="product-details-custom-sizes">
+            <div id="product-details-content-custom-sizes">
                 <p>Don't you have added your measurements?</p>
-                <a href="#">ADD YOUR MEASUREMENTS</a>
+                <a href="../measurements/measurements.php">ADD YOUR MEASUREMENTS</a>
             </div>
 
             <div class="product-details-content-addtocart">
-                <button>ADD TO CART</button>
+                <!--<a id="product-details-content-addtocart-addtocart" href="../inc/submitshoppingcart.php?product_id=<?php //echo $product_id 
+                                                                                                                        ?>">ADD TO CART</a>-->
+                <a id="product-details-content-addtocart-checkout">Proceed to Checkout</a>
             </div>
 
         </div>
@@ -67,11 +84,14 @@
     </div>
 
 
+    <!--Javascript-->
+    <script src="../script.js"></script>
+
     <!-- Importing Footer -->
     <?php include "../footer/footer.php" ?>
 
-    <!--Javascript-->
-    <script src="../script.js"></script>
-  
-  </body>
+
+
+</body>
+
 </html>

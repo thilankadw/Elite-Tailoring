@@ -24,7 +24,7 @@
         <div class="footer-orders">
             <h6>Orders</h6>
             <a href="../store/store.php">Store</a>
-            <a href="#">Customization</a>
+            <a href="../customization/customization.php">Customization</a>
         </div>
 
         <div class="footer-policies">

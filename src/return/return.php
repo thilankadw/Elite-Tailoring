@@ -14,7 +14,7 @@
 <body>
 
     <!-- Importing Navbar -->
-    <?php include "../navbar/navbar.php" ?>
+    <?php include "../header/header.php" ?>
 
 
       <div class="return-policy-container">

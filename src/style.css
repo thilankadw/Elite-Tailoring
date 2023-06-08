@@ -77,6 +77,13 @@ nav{
     border-bottom: 1px solid var(--black-primary);
     font-family: var(--secondary-font);
 }
+.nav-middle-section .nav-searchbar input[type="submit"]{
+    position: relative;
+    left: -0.9rem;
+    z-index: -1;
+    width: 0.2rem;
+    opacity: 0;
+}
 .nav-middle-section .nav-searchbar input::placeholder{
     font-family: var(--secondary-font);
     font-size: 1rem;
@@ -142,6 +149,9 @@ nav{
     border-bottom: 1px solid var(--grey-primary);
     font-family: var(--secondary-font);
 }
+.login-form-element input[type="submit"]{
+    margin-top: 1rem;
+}
 #login-password{
     margin-top: 1rem;
 }
@@ -172,7 +182,7 @@ nav{
     padding: 0.5rem;
     margin-bottom: 1rem;
     background-color: var(--black-primary);
-    color: var(--grey-primary);
+    color: var(--white-primary);
     font-size: 1.3rem;
 }
 
@@ -188,9 +198,12 @@ nav{
 #register-btn{
     margin-top: 2rem;
 }
-
+#gender-select{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 /*----------------------------------------
-        Navigation Styles End
+       Header Styles End
 -----------------------------------------*/
 
 /*--------------------------------------------
@@ -329,9 +342,25 @@ footer a, p{
     align-items: flex-start;
     width: 100%;
     font-family: var(--primary-font);
-    margin-top: 3rem;
+    margin-top: 1.5rem;
     margin-left: 1rem;
     margin-bottom: 3rem;
+}
+.shoppingcart-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.shoppingcart-title h3{
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    background-color: var(--black-primary);
+    color: var(--white-primary);
+    width: 20rem;
+    text-align: center;
+    padding: 0.8rem;
+
 }
 .view-aded-products{
     display: flex;
@@ -460,6 +489,7 @@ footer a, p{
     align-items: center;
     border-right: 1px solid var(--black-secondary);
     margin-top: 0.9rem;
+    
 }
 .store-filter-section form{
     display: flex;
@@ -510,7 +540,7 @@ footer a, p{
 .store-product-card{
     background-color: var(--white-secondary);
     width: 30%;
-    height: 28rem;
+    height: 25.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -520,10 +550,10 @@ footer a, p{
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    overflow: hidden;
 }
 .store-product-card-image img{
-    width: 13.9rem;
-    height: 20rem;
+    width: 13rem;
 }
 .store-product-card-name{
     display: flex;
@@ -542,6 +572,7 @@ footer a, p{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0.5rem;
 }
 .store-product-card-cart a{
     margin-left: 1.5rem;
@@ -587,7 +618,7 @@ footer a, p{
     margin-top: 3rem;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     font-family: var(--primary-font);
 }
@@ -596,6 +627,7 @@ footer a, p{
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    overflow: hidden;
 }
 .product-details-image img{
     width: 30rem;
@@ -605,12 +637,12 @@ footer a, p{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    
 }
 .product-details-content-name h4{
     font-size: 1.7rem;
     font-weight: 500;
     margin-top: 0rem;
+    padding-top: 0rem;
 }
 .product-details-content-price{
     position: relative;
@@ -623,7 +655,14 @@ footer a, p{
 .product-details-content-colors{
     margin-bottom: 1.5rem;
     width: 33rem;
-
+    position: relative;
+    top: -0.5rem;
+}
+.product-details-content-colors p{
+    font-weight: 600;
+}
+.product-details-content-colors-name{
+    font-weight: 500;
 }
 .product-details-content-colors form input[type="submit"]{
     background-color: var(--black-secondary);
@@ -641,7 +680,6 @@ footer a, p{
 .product-details-order-type{
     margin-bottom: 1.5rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid var(--black-secondary);
     padding-top: 1rem;
     border-top: 1px solid var(--black-secondary);
     width: 20rem;
@@ -657,11 +695,50 @@ footer a, p{
     width: 8rem;
     font-family: var(--primary-font);
 }
-.product-details-content-sizes{
+#product-details-content-sizes{
     width: 33rem;
     margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--black-secondary);
+    padding-bottom: 1rem;
 }
-.product-details-content-sizes form input[type="submit"]{
+#product-details-content-sizes form input[type="submit"]{
+    background-color: var(--white-primary);
+    padding: 0.8rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    color: var(--black-primary);
+    height: 2.8rem;
+    font-family: var(--primary-font);
+    font-size: 0.9rem;
+    margin-top: 1.8rem;
+    cursor: pointer;
+    border: 1px solid var(--black-primary);
+    text-align: center;
+    width: 16rem;
+}
+#product-details-content-sizes form input[type="submit"]:hover{
+    background-color: var(--black-primary);
+    color: var(--white-primary);
+}
+#product-details-content-quantity{
+    width: 33rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--black-secondary);
+    padding-bottom: 1rem;
+}
+
+#product-details-content-sizes form input[type="number"]{
+    background-color: var(--white-secondary);
+    outline: none;
+    padding: 0.5rem;
+    border: none;
+    width: 3rem;
+    text-align: center;
+    display: block;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+#product-details-content-quantity form input[type="submit"]{
     background-color: var(--black-secondary);
     border: none;
     outline: none;
@@ -671,28 +748,670 @@ footer a, p{
     padding-left: 0.7rem;
     padding-right: 0.7rem;
     display: block;
-    margin-top: 0.5rem;
+    margin-top: 1.5rem;
     width: 8rem;
-    
+    display: block;
 }
-.product-details-content-custom-sizes{
+#product-details-content-custom-sizes{
+    margin-bottom: 1rem;
+    /*border-bottom: 1px solid var(--black-secondary);*/
+    padding-bottom: 1rem;
+}
+#product-details-content-custom-sizes a{
+    text-decoration: underline;
+    font-family: var(--secondary-font);
+    text-underline-offset: 0.2rem;
+    cursor: pointer;
     margin-bottom: 1rem;
 }
-.product-details-content-custom-sizes a{
-    text-decoration: underline;
-    font-family: var(--primary-font);
+.product-details-content-addtocart{
+    margin-top: 2rem;
 }
-.product-details-content-addtocart button{
+#product-details-content-addtocart-addtocart{
     background-color: var(--black-primary);
-    padding: 0.5rem;
+    padding: 0.8rem;
     color: var(--white-primary);
-    width: 14rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
     height: 2.8rem;
     font-family: var(--primary-font);
-    font-size: 1rem;
+    font-size: 0.9rem;
+    margin-top: 1.8rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    
 }
-
+#product-details-content-addtocart-checkout{
+    background-color: var(--white-primary);
+    padding: 0.8rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    color: var(--black-primary);
+    height: 2.8rem;
+    font-family: var(--primary-font);
+    font-size: 0.9rem;
+    margin-top: 1.8rem;
+    cursor: pointer;
+    border: 1px solid var(--black-primary);
+}
+#product-details-content-addtocart-checkout:hover{
+    background-color: var(--red-primary);
+    color: var(--white-primary);
+    border: none;
+}
 
 /*---------------------------------------
         Product Details Styles End
 -----------------------------------------*/ 
+
+
+/*---------------------------------------
+        Wishlist Styles Start
+-----------------------------------------*/ 
+.wishlist-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.wishlist-title h3{
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    background-color: var(--black-primary);
+    color: var(--white-primary);
+    width: 20rem;
+    text-align: center;
+    padding: 0.8rem;
+}
+.wishlist-container{
+    font-family: var(--primary-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+.wishlist-container .store-product-card{
+    font-family: var(--primary-font);
+    width: 18rem;
+}
+/*---------------------------------------
+        Wishlist Styles End
+-----------------------------------------*/
+
+
+/*---------------------------------------
+        About Styles Start
+-----------------------------------------*/
+.aboutus-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 0rem;
+    margin-top: 2rem;
+}
+.aboutus-title{
+    text-align: center;
+    margin-bottom: 0.4rem;
+}
+.aboutus-title h1{
+    font-family: var(--secondary-font);
+    color: var(--black-secondary);
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+}
+.aboutus-content{
+    margin-bottom: 2rem;
+}
+.aboutus-content p{
+    font-family: var(--primary-font);
+    font-size: 0.9rem;
+}
+/*---------------------------------------
+        About Styles End
+-----------------------------------------*/
+
+/*---------------------------------------
+        User Account Page Styles Start
+-----------------------------------------*/
+.user-welcome{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3rem;
+    margin-top: 2rem;
+    margin-right: 3rem;
+}
+.user-welcome-msg{
+    font-family: var(--secondary-font);
+    font-size: 2rem;
+}
+.user-welcome-msg p{
+    margin: 0rem;
+    padding: 0rem;
+}
+.useraccount-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: var(--secondary-font);
+    margin: 3rem;
+    margin-top: 0rem;
+}
+.user-details-container{
+    width: 80%;
+    background-color: var(--white-secondary);
+    padding: 2rem;
+}
+.user-details-names{
+    display: flex;
+    margin: 0rem;
+}
+.user-detail-first-name-title, .user-detail-last-name-title{
+    margin: 0rem;
+    padding: 0rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+.user-detail-first-name-value, .user-detail-last-name-value{
+    margin: 0rem;
+    padding: 0rem;
+    margin-right: 1rem;
+}
+.user-details-first-name, .user-details-last-name{
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+}
+.user-detail-first-name-value, .user-detail-last-name-value{
+    font-size: 0.75rem;
+    font-family: var(--primary-font);
+}
+.user-details-names, .user-details-email, .user-details-address, .user-details-number{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+.user-details-container input[type="text"],
+.user-details-container input[type="email"]{
+    outline: none;
+    border: none;
+    background-color: var(--white-secondary);
+    font-family: var(--primary-font);
+    font-size: 0.75rem;
+    width: max-content;
+}
+.user-details-email form,
+.user-details-address form,
+.user-details-number form{
+    display: flex;
+    flex-direction: column;
+}
+.user-details-email form input[type="email"],
+.user-details-address form input[type="text"],
+.user-details-number form input[type="text"]{
+    margin-left: 4.6rem;
+    width: 30rem;
+}
+.user-details-email form input[type="submit"],
+.user-details-address form input[type="submit"],
+.user-details-number form input[type="submit"]{
+    width: 14rem;
+    margin-left: 20rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: var(--primary-font);
+    border: 1px solid var(--black-primary);
+    background-color: var(--white-secondary);
+}
+.user-details-email form input[type="submit"]:hover,
+.user-details-address form input[type="submit"]:hover,
+.user-details-number form input[type="submit"]:hover{
+    color: var(--white-primary);
+    background-color: var(--black-primary);
+}
+
+.logout-btn-section form input[type="submit"]{
+    width: 14rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: var(--primary-font);
+    border: 1px solid var(--black-primary);
+    background-color: var(--white-primary);
+}
+.logout-btn-section form input[type="submit"]:hover{
+    color: var(--white-primary);
+    background-color: var(--black-primary);
+}
+.user-account-login-msg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20rem;
+    font-family: var(--secondary-font);
+}
+.user-account-login-msg p{
+    font-size: 3rem;
+    color: var(--black-secondary);
+}
+/*---------------------------------------
+        User Account Page Styles End
+-----------------------------------------*/
+
+
+/*---------------------------------------
+        Edit Email Page Styles Start
+-----------------------------------------*/
+
+.editemail-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--primary-font);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.editemail-container h2{
+    font-family: var(--secondary-font);
+}
+.editemail-container form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.editemail-container form input{
+    margin-bottom: 1rem;
+    border: 1px solid var(--black-primary);
+    outline: none;
+    width: 15rem;
+    height: 1.7rem;
+    font-family: var(--primary-font);
+    text-align: center;
+}
+.editemail-container form input[type="submit"]{
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border: 1px solid var(--black-primary);
+    outline: none;
+    width: 12rem;
+    height: 2rem;
+    font-family: var(--primary-font);
+    text-align: center;
+    background-color: var(--white-primary);
+}
+.editemail-container form input[type="submit"]:hover{
+    color: var(--white-primary);
+    background-color: var(--black-primary);
+}
+
+/*Above styles are same for edit email, edit address, edit contact number pages.
+/*---------------------------------------
+        Edit Email Page Styles End
+-----------------------------------------*/
+
+/*---------------------------------------
+        Index Page Styles Start
+-----------------------------------------*/
+.index-image-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+.index-image-container img{
+    width: 80rem;
+}
+
+/*---------------------------------------
+        Index Page Styles End
+-----------------------------------------*/
+
+
+
+/*--------------------------------------------
+        Appointment Page Styles Start
+---------------------------------------------*/
+
+.appointment-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+}
+.appointment-title h1{
+    font-family: var(--secondary-font);
+    color: var(--black-secondary);
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+}
+.appointment-form-fields{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.appointment-form-container form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 6rem;
+}
+.appointment-form-container form label{
+    font-family: var(--primary-font);
+    display: block;
+}
+.appointment-form-container form input[type="email"],
+.appointment-form-container form input[type="text"],
+.appointment-form-container form input[type="date"],
+.appointment-form-container form input[type="time"]{
+    border: none;
+    outline: none;
+    background-color: var(--white-secondary);
+    width: 14rem;
+    text-align: center;
+    height: 1.7rem;
+    font-family: var(--primary-font);
+    font-size: 0.9rem;
+}
+.appointment-form-container form input[type="submit"]{
+    background-color: var(--white-primary);
+    border: 1px solid var(--black-primary);
+    font-family: var(--primary-font);
+    width: 10rem;
+    padding: 0.6rem;
+    margin-top: 1rem;
+    position: relative;
+    left: -38rem;
+    top: 5rem;
+} 
+.appointment-form-container form input[type="submit"]:hover{
+    background-color: var(--black-primary);
+    border: 1px solid var(--black-primary);
+    color: var(--white-primary);
+} 
+/*--------------------------------------------
+        Appointment Page Styles End
+---------------------------------------------*/
+
+/*----------------------------------------------
+        Measurements Page Styles start
+-----------------------------------------------*/
+.measurements-page-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+}
+.measurements-page-title h1{
+    font-family: var(--secondary-font);
+    color: var(--black-secondary);
+    font-weight: 500;
+    letter-spacing: 0.3rem;
+}
+.measurements-form-element{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#measurements-form-male{
+    font-family: var(--primary-font);
+}
+#measurements-form-female{
+    font-family: var(--primary-font);
+}
+#measurements-form-male label{
+    display: block;
+}
+#measurements-form-female label{
+    display: block;
+}
+#measurements-form-male input[type="text"]{
+    width: 10rem;
+    outline: none;
+    border: none;
+    background-color: var(--white-secondary);
+    padding: 0.8rem;
+}
+#measurements-form-female input[type="text"]{
+    width: 10rem;
+    outline: none;
+    border: none;
+    background-color: var(--white-secondary);
+    padding: 0.8rem;
+}
+#measurements-form-male input[type="submit"]{
+    width: 11.7rem;
+    outline: none;
+    border: none;
+    background-color: var(--white-primary);
+    border: 1px solid var(--black-primary);
+    padding: 0.8rem;
+    font-family: var(--primary-font);
+    margin-top: 1rem;
+}
+#measurements-form-female input[type="submit"]{
+    width: 11.7rem;
+    outline: none;
+    border: none;
+    background-color: var(--white-primary);
+    border: 1px solid var(--black-primary);
+    padding: 0.8rem;
+    font-family: var(--primary-font);
+    margin-top: 1rem;
+}
+#measurements-form-male input[type="submit"]:hover{
+    background-color: var(--black-primary);
+    color: white;
+}
+#measurements-form-female input[type="submit"]:hover{
+    background-color: var(--black-primary);
+    color: white;
+}
+
+
+/*--------------------------------------------
+----------------------------------------------
+        Admin panel Styles Start
+----------------------------------------------
+--------------------------------------------*/
+.admin-panel-container{
+    margin: 2rem;
+    font-family: var(--primary-font);
+}
+.admin-panel-header{
+    font-family: var(--secondary-font);
+    text-align: center;
+}
+.admin-panel-dashboard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.admin-dashboard-left-side{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-secondary);
+    margin: 1rem;
+    width: 25%;
+    height: 30rem;
+}
+.admin-dashboard-left-side .admin-navigate-button{
+    margin: 1rem;
+}
+.admin-dashboard-left-side .admin-navigate-button button{
+    font-family: var(--primary-font);
+    background-color: var(--white-primary);
+    color: var(--black-primary);
+    padding: 0.9rem;
+    width: 15rem;
+    border: 1px solid var(--black-primary);
+}
+.admin-dashboard-left-side .admin-navigate-button button:hover{
+    background-color: var(--white-secondary);
+}
+.admin-dashboard-left-side .admin-navigate-button button:active{
+    background-color: var(--black-primary);
+    color: var(--white-primary);
+}
+.admin-dashboard-right-side{
+    width: 75%;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white-secondary);
+    overflow: scroll;
+}
+
+.admin-dashboard-right-side #admin-add-products form .add-product-form-element{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.admin-dashboard-right-side #admin-add-products form .add-product-form-element label{
+    display: block;
+}
+.admin-dashboard-right-side #admin-add-products form .add-product-form-element input{
+    width: 20rem;
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid var(--black-primary);
+    overflow: hidden;
+    text-align: center;
+}
+#add-product-btn{
+    padding: 0.5rem;
+}
+.admin-dashboard-right-side #admin-add-products form .add-product-form-element input[type="file"]{
+    text-align: right;
+    background-color: var(--white-primary);
+}
+#admin-add-products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#admin-display-products{
+    font-family: var(--primary-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+#admin-display-products form .display-product-form-element{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#admin-display-products form .display-product-form-element label{
+    display: block;
+}
+#admin-display-products form .display-product-form-element input{
+    width: 20rem;
+    padding: 0.5rem;
+    outline: none;
+    border: 1px solid var(--black-primary);
+    overflow: hidden;
+    text-align: center;
+}
+#admin-display-products a{
+    font-family: var(--primary-font);
+    color: var(--black-primary);
+    width: 15rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    padding: 0.4rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+#admin-display-products a:hover{
+    background-color: var(--black-primary);
+    color: var(--white-primary);
+}
+
+
+#admin-display-orders{
+    font-family: var(--primary-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+#admin-display-orders a{
+    font-family: var(--primary-font);
+    color: var(--black-primary);
+    width: 15rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    padding: 0.4rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+#admin-display-orders a:hover{
+    background-color: var(--black-primary);
+    color: var(--white-primary);
+}
+
+
+#admin-display-appointments{
+    font-family: var(--primary-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+#admin-display-appointments a{
+    font-family: var(--primary-font);
+    color: var(--black-primary);
+    width: 15rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    margin-bottom: 0.1rem;
+    padding: 0.4rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+#admin-display-appointments a:hover{
+    background-color: var(--black-primary);
+    color: var(--white-primary);
+}
+#admin-display-appointments input[type="date"],
+#admin-display-appointments input[type="time"]{
+    outline: none;
+    border: none;
+    background-color: var(--white-secondary);
+    font-family: var(--primary-font);
+}
+#admin-display-appointments input[type="submit"]{
+    font-family: var(--primary-font);
+    color: var(--black-primary);
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    padding: 0.4rem;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+    border: none;
+    background-color: var(--white-secondary);
+}
+#admin-display-appointments input[type="submit"]:hover{
+    background-color: var(--black-primary);
+    color: var(--white-primary);
+}
