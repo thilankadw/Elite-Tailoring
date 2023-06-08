@@ -5,8 +5,6 @@
 
 <?php
 
-$user_id = $_SESSION['user_id'];
-
 $query = "SELECT * FROM shopping_cart";
 $result = mysqli_query($conn, $query);
 
@@ -134,11 +132,11 @@ $result = mysqli_query($conn, $query);
             $total = $subtotal + 12.67;
 
             echo "<div class='shoppingcart-total shoppingcart-pricing'>
-                        <p class='shoppingcart-pricing-attribute-name'>Total : " . $total . "</p>
-                        <p>$56.62</p>
+                        <p class='shoppingcart-pricing-attribute-name'>Total : </p>
+                        <p>" . $total . "</p>
                     </div>
 
-                    <button type='submit'><a href='#'>Proceed to Checkout</a></button>
+                    <button type='submit'><a href='../inc/submitorders.php'>Proceed to Checkout</a></button>
 
                 </div>";
         } else {

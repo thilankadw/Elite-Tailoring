@@ -23,7 +23,7 @@ document.querySelector("#login").addEventListener("click", () => {
     document.querySelector(".login-form-display").style.display = "block";
 });
 
-//function for matching passwords.
+/*function for matching passwords.
 function validateForm(event) {
     var password = document.getElementById("password").value;
     var confirmPassword = document.getElementById("confirm-password").value;
@@ -32,7 +32,7 @@ function validateForm(event) {
         event.preventDefault(); // Prevent form submission
         alert("Password and Confirm Password do not match.");
     }
-}
+}*/
 
 
 /*------------------------------------------------

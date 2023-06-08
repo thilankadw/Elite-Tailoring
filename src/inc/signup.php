@@ -5,15 +5,15 @@
 <?php
 
 if (isset($_POST['register-btn'])) {
-
+    /*
     if (empty($_POST['firstname']) || empty($_POST['lastname']) || empty($_POST['email']) || empty($_POST['gender']) || empty($_POST['address-line1']) || empty($_POST['contact-number']) || empty($_POST['password'])) {
-        // Step 3: Perform the redirection with alert message
+        
         echo '<script>';
         echo 'alert("Please fill in all fields.");';
         echo 'window.location.href = "../index/index.php";';
         echo '</script>';
         exit;
-    }
+    }*/
 
 
     $firstname = ($_POST['firstname']);

@@ -97,7 +97,7 @@
         </div>
 
         <div class="register-form-display">
-            <form action="../inc/signup.php" method="POST" autocomplete="on" name="register" onsubmit="return(passwordmatching());">
+            <form action="../inc/signup.php" method="POST" autocomplete="on" name="register">
                 <div class="login-form-element">
                     <label for="firstname" id="firstname">First Name</label>
                     <input type="text" id="firstname" name="firstname" autofocus required pattern="[a-zA-Z]+">

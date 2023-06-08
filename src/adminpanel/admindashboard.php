@@ -127,6 +127,42 @@
                     <div id="admin-display-orders">
                         <h2>Orders</h2>
 
+                        <?php
+
+
+                        $sql = "SELECT p.product_id, p.product_name, c.color, s.size, p.product_quantity
+                                FROM product p
+                                INNER JOIN colors c ON p.product_color = c.color_id
+                                INNER JOIN sizes s ON p.product_size = s.size_id";
+                        $result = mysqli_query($conn, $sql);
+
+                        if ($result->num_rows > 0) {
+                            echo "<table style='border-collapse: collapse;'>
+                                    <tr>
+                                        <th style='border: 1px solid black; padding: 8px;'>Order ID</th>
+                                        <th style='border: 1px solid black; padding: 8px;'>Product ID</th>
+                                        <th style='border: 1px solid black; padding: 8px;'>Order Type</th>
+                                        <th style='border: 1px solid black; padding: 8px;'>User ID</th>
+                                        <th style='border: 1px solid black; padding: 8px;'>Total</th>
+                                    </tr>";
+
+                            while ($row = $result->fetch_assoc()) {
+                                echo "<tr>
+                                        <td style='border: 1px solid black; padding: 8px;'>" . $row["product_id"] . "</td>
+                                        <td style='border: 1px solid black; padding: 8px;'>" . $row["product_name"] . "</td>
+                                        <td style='border: 1px solid black; padding: 8px;'>" . $row["color"] . "</td>
+                                        <td style='border: 1px solid black; padding: 8px;'>" . $row["size"] . "</td>
+                                        <td style='border: 1px solid black; padding: 8px;'>" . $row["product_quantity"] . "</td>
+                                    </tr>";
+                            }
+
+                            echo "</table>";
+                        } else {
+                            echo "No products found.";
+                        }
+
+                        ?>
+
                     </div>
                     <div id="admin-display-appointments">
                         <h2>Appointments</h2>
