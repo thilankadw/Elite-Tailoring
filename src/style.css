@@ -1101,6 +1101,7 @@ footer a, p{
     margin: auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
+<<<<<<< HEAD
   }
   
   /* Caption text */
@@ -1116,22 +1117,46 @@ footer a, p{
 .active {
     background-color: #717171;
   }
+=======
+}
+.active {
+    background-color: #717171;
+}
+>>>>>>> a4185648f06c9c99226be8f5b097b987656ca5f8
   
   /* Fading animation */
   .fade {
     animation-name: fade;
     animation-duration: 1.5s;
+<<<<<<< HEAD
   }
+=======
+}
+>>>>>>> a4185648f06c9c99226be8f5b097b987656ca5f8
   
   @keyframes fade {
     from {opacity: .9} 
     to {opacity: 1}
+<<<<<<< HEAD
   }
   
   /* On smaller screens, decrease text size */
   @media only screen and (max-width: 300px) {
     .text {font-size: 11px}
   }
+=======
+}
+.home-navigations{
+    width: 100%;
+}
+.home-navigation-card{
+    width: 20rem;
+}
+.home-navigation-card-img{
+    width: 10%;    
+}
+  
+>>>>>>> a4185648f06c9c99226be8f5b097b987656ca5f8
 /*---------------------------------------
         Index Page Styles End
 -----------------------------------------*/

@@ -38,10 +38,13 @@
         </div>
 
         <div class="aboutus-img">
+<<<<<<< HEAD
             <img src="../assets/aboutus/Abboutus.jpg" alt="">
         </div>
 
         <div class="aboutus-img">
+=======
+>>>>>>> a4185648f06c9c99226be8f5b097b987656ca5f8
             <img src="../assets/aboutus/index-page-banner2.jpg" alt="">
         </div>
 

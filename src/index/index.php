@@ -47,6 +47,22 @@
         <span class="dot"></span> 
         </div>
 
+<<<<<<< HEAD
+=======
+
+        <div class="home-navigations">
+          <div class="home-navigation-card">
+            <div class="home-navigation-card-img">
+              <img src="../assets/customization/customizationguideimg-2.jpg" alt="">
+            </div>
+            <div class="home-navigation-card-img-link"></div>
+            <div class="home-navigation-card-text"></div>
+          </div>
+        </div>
+
+
+
+>>>>>>> a4185648f06c9c99226be8f5b097b987656ca5f8
         
         
         </div>
