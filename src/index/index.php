@@ -51,9 +51,31 @@
         <div class="home-navigations">
           <div class="home-navigation-card">
             <div class="home-navigation-card-img">
-              <img src="../assets/customization/customizationguideimg-2.jpg" alt="">
+              <img src="../assets/index/index-navigation-img-2.jpg" alt="">
             </div>
-            <div class="home-navigation-card-img-link"></div>
+            <div class="home-navigation-card-img-link">
+              <a href="../store/store.php" id="visit-store-home">Visit Store</a>
+            </div>
+            <div class="home-navigation-card-text"></div>
+          </div>
+
+          <div class="home-navigation-card">
+            <div class="home-navigation-card-img">
+              <img src="../assets/index/index-navigation-img-1.jpg" alt="">
+            </div>
+            <div class="home-navigation-card-img-link">
+              <a href="../appointments/appointments.php">Appointments</a>
+            </div>
+            <div class="home-navigation-card-text"></div>
+          </div>
+
+          <div class="home-navigation-card">
+            <div class="home-navigation-card-img">
+              <img src="../assets/index/index-navigation-img-3.jpg" alt="">
+            </div>
+            <div class="home-navigation-card-img-link">
+              <a href="../measurements/measurements.php">Add Your Measurements</a>
+            </div>
             <div class="home-navigation-card-text"></div>
           </div>
         </div>

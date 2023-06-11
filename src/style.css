@@ -303,6 +303,13 @@ footer{
     align-items: flex-start;
     border-top: 1px solid var(--grey-third);
 }
+.footer-logo{
+    position: relative;
+    top: 3.5rem;
+}
+.footer-logo img{
+    width: 5rem;
+}
 footer h6{
     font-size: 1rem;
     font-weight: 500;
@@ -313,7 +320,7 @@ footer h6{
 footer a, p{
     font-size: 0.9rem;
 }
-.footer-contact, .footer-orders, .footer-policies, .footer-about{
+.footer-logo, .footer-contact, .footer-orders, .footer-policies, .footer-about{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -1105,27 +1112,64 @@ footer a, p{
 .active {
     background-color: #717171;
 }
-  
-  /* Fading animation */
-  .fade {
+.fade {
     animation-name: fade;
     animation-duration: 1.5s;
 }
   
-  @keyframes fade {
+@keyframes fade {
     from {opacity: .9} 
     to {opacity: 1}
 }
 .home-navigations{
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3.7rem;
+    margin-bottom: 2rem;
 }
 .home-navigation-card{
     width: 20rem;
+    height: 20rem;
+    background-color: var(--blue-primary);
+    font-family: var(--primary-font);
+    box-shadow: 1px 4px 10px var(--grey-third);
+}
+.home-navigation-card:hover .home-navigation-card-img img{
+    filter: grayscale(100%);
 }
 .home-navigation-card-img{
-    width: 10%;    
+    overflow: hidden;
 }
-  
+#visit-store-home{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.home-navigation-card-img img{
+    width: 20rem;    
+}
+.home-navigation-card-img-link{
+    display: none;
+    z-index: 98;
+    position: relative;
+    top: -10rem;
+    text-align: center;
+}
+.home-navigation-card:hover .home-navigation-card-img-link{
+    display: block;
+    color: var(--white-primary);
+    overflow: var(--white-secondary);
+}
+.home-navigation-card-img-link a{
+    padding: 1rem;
+}
+.home-navigation-card:hover .home-navigation-card-img-link a{
+    color: var(--white-primary);
+    background-color: var(--black-primary);
+    padding: 0.5rem;
+    font-weight: 500;
+}
 /*---------------------------------------
         Index Page Styles End
 -----------------------------------------*/

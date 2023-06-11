@@ -15,6 +15,10 @@
 
     <footer>
 
+        <div class="footer-logo">
+            <img src="../assets/logo/logo.jpg" alt="">
+        </div>
+
         <div class="footer-contact">
             <h6>Contact Us</h6>
             <p>+94 112 345 678</p>
@@ -30,14 +34,12 @@
         <div class="footer-policies">
             <h6>Sales Policies</h6>
             <a href="../return/return.php">Return Policy</a>
-            <a href="#">Privacy Policy</a>
         </div>
 
         <div class="footer-about">
             <h6>About</h6>
-            <a href="#">Elite Tailoring</a>
-            <a href="#">How Customization Works</a>
-            <a href="#">Reviews</a>
+            <a href="../index/index.php">Elite Tailoring</a>
+            <a href="../customization/customization.php">How Customization Works</a>
         </div>
 
     </footer>
