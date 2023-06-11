@@ -41,14 +41,19 @@
           
         </div>
 
+        <div class="mySlides fade">
+            
+          <img src="../assets/index/banner25.png" style="width:100%">
+          
+        </div>
+        
+
         <div>
         <span class="dot"></span> 
         <span class="dot"></span> 
         <span class="dot"></span> 
         </div>
 
-<<<<<<< HEAD
-=======
 
         <div class="home-navigations">
           <div class="home-navigation-card">
@@ -62,7 +67,6 @@
 
 
 
->>>>>>> a4185648f06c9c99226be8f5b097b987656ca5f8
         
         
         </div>
