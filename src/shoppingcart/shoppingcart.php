@@ -38,8 +38,7 @@
         $query = "SELECT * FROM shopping_cart WHERE user_id = '{$user_id}'";
         $result = mysqli_query($conn, $query);
 
-        echo "
-            <div class='shoppingcart-container'>";
+        echo " <div class='shoppingcart-container'>";
 
         if ($result->num_rows > 0) {
             echo "<div class='shoppingcart-title-line'>

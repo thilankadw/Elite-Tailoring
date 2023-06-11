@@ -869,6 +869,9 @@ footer a, p{
 .aboutus-img img{
     width: 60rem;
 }
+#welcome{
+    font-size:x-large;
+}
 .aboutus-container{
     display: flex;
     flex-direction: column;
@@ -1109,18 +1112,43 @@ footer a, p{
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
 .active {
     background-color: #717171;
 }
+.active {
+    background-color: #717171;
+}  
+/* Fading animation */
 .fade {
+
     animation-name: fade;
     animation-duration: 1.5s;
+
 }
+
   
 @keyframes fade {
     from {opacity: .9} 
     to {opacity: 1}
+
 }
+  
+  /* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+
 .home-navigations{
     width: 100%;
     display: flex;
@@ -1170,6 +1198,8 @@ footer a, p{
     padding: 0.5rem;
     font-weight: 500;
 }
+
+
 /*---------------------------------------
         Index Page Styles End
 -----------------------------------------*/
