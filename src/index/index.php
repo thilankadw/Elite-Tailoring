@@ -30,7 +30,6 @@
       <img src="../assets/index/index-page-banner1.jpg" style="width:100%">
 
     </div>
-
     <div class="mySlides fade">
 
       <img src="../assets/index/index-page-banner2.jpg" style="width:100%">
@@ -41,11 +40,17 @@
       <img src="../assets/index/index-page-banner3.jpg" style="width:100%">
 
     </div>
+    <div class="mySlides fade">
+
+      <img src="../assets/index/banner25.png" style="width:100%">
+
+    </div>
 
   </div>
 
 
   <div>
+    <span class="dot"></span>
     <span class="dot"></span>
     <span class="dot"></span>
     <span class="dot"></span>
