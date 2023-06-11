@@ -67,6 +67,9 @@ nav{
     text-align: center;
     font-size: 2rem;
 }
+.nav-logo a img{
+    width: 6rem;
+}
 .nav-searchbar{
     flex: 3;
 }
@@ -305,7 +308,7 @@ footer{
 }
 .footer-logo{
     position: relative;
-    top: 3.5rem;
+    top: 5rem;
 }
 .footer-logo img{
     width: 5rem;

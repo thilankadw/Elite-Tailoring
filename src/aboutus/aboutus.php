@@ -31,7 +31,7 @@
             <p id="welcome">Welcome to Elite Tailoring!<br></p>
 
 
-            <p>    Welcome to Elite Tailoring, where personalized tailoring meets unmatched craftsmanship. With years of experience and a skilled team, we create bespoke garments that reflect your style and personality.<br><br> Our meticulous attention to detail ensures each piece is a masterpiece. Alongside custom tailoring, our factory outlets offer ready-to-wear collections that combine style and affordability.<br><br> Our friendly staff provides exceptional customer service, and we prioritize sustainability and ethical practices.<br><br> Experience the pleasure of owning clothing that fits perfectly, enhances confidence, and lasts.Visit our showroom and discover the world of Elite Tailoring – where fashion dreams become a reality.
+            <p> Welcome to Elite Tailoring, where personalized tailoring meets unmatched craftsmanship. With years of experience and a skilled team, we create bespoke garments that reflect your style and personality.<br><br> Our meticulous attention to detail ensures each piece is a masterpiece. Alongside custom tailoring, our factory outlets offer ready-to-wear collections that combine style and affordability.<br><br> Our friendly staff provides exceptional customer service, and we prioritize sustainability and ethical practices.<br><br> Experience the pleasure of owning clothing that fits perfectly, enhances confidence, and lasts.Visit our showroom and discover the world of Elite Tailoring – where fashion dreams become a reality.
 
                 <br><br>Welcome to the world of Elite Tailoring.
             </p>
@@ -39,10 +39,6 @@
 
         <div class="aboutus-img">
             <img src="../assets/aboutus/Abboutus.jpg" alt="">
-        </div>
-
-        <div class="aboutus-img">
-            <img src="../assets/aboutus/index-page-banner2.jpg" alt="">
         </div>
 
     </div>

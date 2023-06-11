@@ -48,7 +48,7 @@
             </div>
         </div>
         <div class="nav-middle-section">
-            <div class="nav-logo"><a href="../index/index.php">Elite</a></div>
+            <div class="nav-logo"><a href="../index/index.php"><img src="../assets/logo/logo.jpg" alt=""></a></div>
             <div class="nav-searchbar">
                 <form action="../store/store.php" method="GET">
                     <i class="fa-solid fa-magnifying-glass"><input type="submit" name="search-submit"></i>
