@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+
 <body>
 
     <nav>
@@ -35,7 +37,7 @@
             </div>
         </div>
         <div class="nav-middle-section">
-            <div class="nav-logo">Elite</div>
+            <div class="nav-logo">elite</div>
             <div class="nav-searchbar">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <input type="text" placeholder="Search">
@@ -45,7 +47,7 @@
                 <a href="#">APPOINTMENTS</a>
                 <a href="../customization/customization.php">CUSTOMIZATION</a>
                 <a href="#">ABOUT US</a>
-              <!--  <a href="../contact/contact.php">CONTACT US</a>  -->
+                <!--  <a href="../contact/contact.php">CONTACT US</a>  -->
             </div>
         </div>
     </nav>
@@ -57,8 +59,12 @@
         </div>
 
         <div class="login-form">
-            <button id="login"><h2>Login</h2></button>
-            <button id="register"><h2>Register</h2></button>
+            <button id="login">
+                <h2>Login</h2>
+            </button>
+            <button id="register">
+                <h2>Register</h2>
+            </button>
         </div>
 
         <div class="login-form-display">
@@ -121,7 +127,7 @@
             </div>
         </div>
     </div>
-    
+
 
 
 
@@ -129,4 +135,5 @@
 
 
 </body>
+
 </html>

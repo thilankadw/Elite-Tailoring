@@ -82,6 +82,12 @@
                 </div>
 
             </div>
+
+            <div class='measurements-link'>
+
+                <a href='../measurements/measurements.php'>Add Your Measurements</a>
+
+            </div>
             
             ";
     } else {

@@ -23,18 +23,72 @@
     <!-- Importing Navbar -->
     <?php include "../header/header.php" ?>
 
-    <div class='index-page-container'>
+    <div class="slideshow-container">
 
-        <div class="index-image-container">
-            <img src="../assets/index/index-page-banner1.jpg" alt="">
+        <div class="mySlides fade">
+            
+          <img src="../assets/index/index-page-banner1.jpg" style="width:100%">
+          
+        </div>
+        <div class="mySlides fade">
+            
+          <img src="../assets/index/index-page-banner2.jpg" style="width:100%">
+          
+        </div>
+        <div class="mySlides fade">
+            
+          <img src="../assets/index/index-page-banner3.jpg" style="width:100%">
+          
         </div>
 
-    </div>
+        <div>
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        </div>
+
+
+        <div class="home-navigations">
+          <div class="home-navigation-card">
+            <div class="home-navigation-card-img">
+              <img src="../assets/customization/customizationguideimg-2.jpg" alt="">
+            </div>
+            <div class="home-navigation-card-img-link"></div>
+            <div class="home-navigation-card-text"></div>
+          </div>
+        </div>
+
+
+
+        
+        
+        </div>
 
 
 
 
-    <script src="../script.js"></script>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+            
 
     <!-- Importing Footer -->
     <?php include "../footer/footer.php" ?>

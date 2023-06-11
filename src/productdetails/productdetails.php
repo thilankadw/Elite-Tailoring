@@ -63,8 +63,8 @@ $product_details = mysqli_fetch_assoc($row);
 
                     <input type="number" name="quantity" value="1">
 
-                    <input type="submit" value="ADD TO CART" name="order_type">
-                </form>
+                    <input type="submit" value="ADD TO CART" name="add_to_cart">
+
 
             </div>
 
@@ -74,10 +74,11 @@ $product_details = mysqli_fetch_assoc($row);
             </div>
 
             <div class="product-details-content-addtocart">
-                <!--<a id="product-details-content-addtocart-addtocart" href="../inc/submitshoppingcart.php?product_id=<?php //echo $product_id 
-                                                                                                                        ?>">ADD TO CART</a>-->
-                <a id="product-details-content-addtocart-checkout">Proceed to Checkout</a>
+                <!--<a id="product-details-content-addtocart-addtocart" href="../inc/submitshoppingcart.php?product_id=<?php $product_id ?>">ADD TO CART</a>
+                <a href="../inc/submitorders.php?product_id = <?php echo $product_id; ?>" class="product-details-content-addtocart-checkout">Proceed to Checkout</a>-->
+                <input type="submit" value="Proceed to Checkout" name="submit-order" class="product-details-content-addtocart-checkout">
             </div>
+            </form>
 
         </div>
 

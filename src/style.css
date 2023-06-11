@@ -65,7 +65,7 @@ nav{
 .nav-logo{
     flex: 2;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 2rem;
 }
 .nav-searchbar{
     flex: 3;
@@ -338,8 +338,9 @@ footer a, p{
 
 .shoppingcart-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
     font-family: var(--primary-font);
     margin-top: 1.5rem;
@@ -373,8 +374,8 @@ footer a, p{
     justify-content: flex-start;
     align-items: center;
     margin-left: 4rem;
-    margin-right: 4rem;
-    border-bottom: 1px solid var(--black-primary);
+    margin-right: 4rem;   
+    /*border-bottom: 1px solid var(--black-primary);*/
 }
 .shoppingcart-title-line h6{
     font-size: 1rem;
@@ -767,6 +768,21 @@ footer a, p{
 .product-details-content-addtocart{
     margin-top: 2rem;
 }
+#submit-order{
+    background-color: var(--white-primary);
+    padding: 0.8rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+    color: var(--black-primary);
+    height: 2.8rem;
+    font-family: var(--primary-font);
+    font-size: 0.9rem;
+    margin-top: 1.8rem;
+    cursor: pointer;
+    border: 1px solid var(--black-primary);
+    text-align: center;
+    width: 16rem;
+}
 #product-details-content-addtocart-addtocart{
     background-color: var(--black-primary);
     padding: 0.8rem;
@@ -781,7 +797,7 @@ footer a, p{
     cursor: pointer;
     
 }
-#product-details-content-addtocart-checkout{
+.product-details-content-addtocart-checkout{
     background-color: var(--white-primary);
     padding: 0.8rem;
     padding-left: 3.5rem;
@@ -794,7 +810,7 @@ footer a, p{
     cursor: pointer;
     border: 1px solid var(--black-primary);
 }
-#product-details-content-addtocart-checkout:hover{
+.product-details-content-addtocart-checkout:hover{
     background-color: var(--red-primary);
     color: var(--white-primary);
     border: none;
@@ -843,6 +859,9 @@ footer a, p{
 /*---------------------------------------
         About Styles Start
 -----------------------------------------*/
+.aboutus-img img{
+    width: 60rem;
+}
 .aboutus-container{
     display: flex;
     flex-direction: column;
@@ -850,7 +869,7 @@ footer a, p{
     justify-content: center;
     margin-left: 3rem;
     margin-right: 3rem;
-    margin-bottom: 0rem;
+    margin-bottom: 2rem;
     margin-top: 2rem;
 }
 .aboutus-title{
@@ -868,7 +887,7 @@ footer a, p{
 }
 .aboutus-content p{
     font-family: var(--primary-font);
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 /*---------------------------------------
         About Styles End
@@ -998,6 +1017,22 @@ footer a, p{
     font-size: 3rem;
     color: var(--black-secondary);
 }
+.measurements-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--primary-font);
+    margin-bottom: 2rem;
+}
+.measurements-link a{
+    border: 1px solid var(--black-primary);
+    padding: 0.5rem;
+}
+.measurements-link a:hover{
+    background-color: var(--black-primary);
+    color: var(--white-primary);
+}
 /*---------------------------------------
         User Account Page Styles End
 -----------------------------------------*/
@@ -1058,18 +1093,39 @@ footer a, p{
 /*---------------------------------------
         Index Page Styles Start
 -----------------------------------------*/
-.index-image-container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3rem;
+
+/*-----Slide Show------*/
+.slideshow-container {
+    max-width: 80rem;;
+    position: relative;
+    margin: auto;
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
-.index-image-container img{
-    width: 80rem;
+.active {
+    background-color: #717171;
 }
-
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+  @keyframes fade {
+    from {opacity: .9} 
+    to {opacity: 1}
+}
+.home-navigations{
+    width: 100%;
+}
+.home-navigation-card{
+    width: 20rem;
+}
+.home-navigation-card-img{
+    width: 10%;    
+}
+  
 /*---------------------------------------
         Index Page Styles End
 -----------------------------------------*/
