@@ -16,15 +16,15 @@ if (isset($_POST['appointment-submit'])) {
         exit;
     }
 
-
+    $user_id = $_SESSION['user_id'];
     $email = $_POST['appointment-email'];
     $contact_number = $_POST['appointment-contact-number'];
     $date = $_POST['appointment-date'];
     $time = $_POST['appointment-time'];
 }
 
-$query = "INSERT INTO appointments(email,contact_number,date,time)
-                VALUES ('{$email}','{$contact_number}','{$date}','{$time}')";
+$query = "INSERT INTO appointments(user_id,email,contact_number,date,time)
+                VALUES ('{$user_id}','{$email}','{$contact_number}','{$date}','{$time}')";
 
 $result = mysqli_query($conn, $query);
 

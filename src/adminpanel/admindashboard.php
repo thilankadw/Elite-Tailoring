@@ -51,27 +51,27 @@
                         <form action="../inc/addproduct.php" method="POST" enctype="multipart/form-data">
                             <div class="add-product-form-element">
                                 <label for="">Product Name</label>
-                                <input type="text" name="product_name">
+                                <input type="text" name="product_name" required>
                             </div>
                             <div class="add-product-form-element">
                                 <label for="">Product Image</label>
-                                <input type="file" name="imagfile">
+                                <input type="file" name="imagfile" required>
                             </div>
                             <div class="add-product-form-element">
                                 <label for="">Product Price</label>
-                                <input type="text" name="product_price">
+                                <input type="text" name="product_price" required>
                             </div>
                             <div class="add-product-form-element">
                                 <label for="">Product Quantity</label>
-                                <input type="number" name="product_quantity">
+                                <input type="number" name="product_quantity" required>
                             </div>
                             <div class="add-product-form-element">
                                 <label for="">Product Color(Color ID)</label>
-                                <input type="number" name="product_color">
+                                <input type="number" name="product_color" required>
                             </div>
                             <div class="add-product-form-element">
                                 <label for="">Product Size(Size ID)</label>
-                                <input type="number" name="product_size">
+                                <input type="number" name="product_size" required>
                             </div>
                             <div class="add-product-form-element">
                                 <input type="submit" value="Add Product" name="add-product-btn" id="add-product-btn">
@@ -130,10 +130,7 @@
                         <?php
 
 
-                        $sql = "SELECT p.product_id, p.product_name, c.color, s.size, p.product_quantity
-                                FROM product p
-                                INNER JOIN colors c ON p.product_color = c.color_id
-                                INNER JOIN sizes s ON p.product_size = s.size_id";
+                        $sql = "SELECT * FROM orders";
                         $result = mysqli_query($conn, $sql);
 
                         if ($result->num_rows > 0) {
@@ -141,18 +138,19 @@
                                     <tr>
                                         <th style='border: 1px solid black; padding: 8px;'>Order ID</th>
                                         <th style='border: 1px solid black; padding: 8px;'>Product ID</th>
-                                        <th style='border: 1px solid black; padding: 8px;'>Order Type</th>
                                         <th style='border: 1px solid black; padding: 8px;'>User ID</th>
-                                        <th style='border: 1px solid black; padding: 8px;'>Total</th>
+                                        <th style='border: 1px solid black; padding: 8px;'>Order Type</th>
+                                        <th style='border: 1px solid black; padding: 8px;'>Quantity</th>
                                     </tr>";
 
                             while ($row = $result->fetch_assoc()) {
                                 echo "<tr>
+                                        <td style='border: 1px solid black; padding: 8px;'>" . $row["order_id"] . "</td>
                                         <td style='border: 1px solid black; padding: 8px;'>" . $row["product_id"] . "</td>
-                                        <td style='border: 1px solid black; padding: 8px;'>" . $row["product_name"] . "</td>
-                                        <td style='border: 1px solid black; padding: 8px;'>" . $row["color"] . "</td>
-                                        <td style='border: 1px solid black; padding: 8px;'>" . $row["size"] . "</td>
-                                        <td style='border: 1px solid black; padding: 8px;'>" . $row["product_quantity"] . "</td>
+                                        <td style='border: 1px solid black; padding: 8px;'>" . $row["user_id"] . "</td>
+                                        <td style='border: 1px solid black; padding: 8px;'>" . $row["order_type"] . "</td>
+                                        <td style='border: 1px solid black; padding: 8px;'>" . $row["quantity"] . "</td>
+                                        
                                     </tr>";
                             }
 

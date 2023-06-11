@@ -3,13 +3,6 @@
 <!--Database Connection -->
 <?php include "../inc/connection.php"; ?>
 
-<?php
-
-$query = "SELECT * FROM shopping_cart";
-$result = mysqli_query($conn, $query);
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,10 +32,20 @@ $result = mysqli_query($conn, $query);
 
     if (isset($_SESSION['user_first_name'])) {
 
+
+        $user_id = $_SESSION['user_id'];
+
+        $query = "SELECT * FROM shopping_cart WHERE user_id = '{$user_id}'";
+        $result = mysqli_query($conn, $query);
+
         echo "
             <div class='shoppingcart-container'>";
 
         if ($result->num_rows > 0) {
+            echo "<div class='shoppingcart-title-line'>
+            <h6>Your Shopping Bag</h6>
+            <p>" . $result->num_rows . " items</p>
+        </div>";
             while ($products = $result->fetch_assoc()) {
 
                 $shoppingcart_product_id = $products['product_id'];
@@ -54,13 +57,10 @@ $result = mysqli_query($conn, $query);
                 echo "
 
                 <div class='view-aded-products'>
-                    <div class='shoppingcart-title-line'>
-                        <h6>Your Shopping Bag</h6>
-                        <p>1 items</p>
-                    </div>
+                    
                     <div class='shopingcart-product-details-section'>
                         <div class='shoppingcart-product-image'>
-                            <img src='" . $cart_products['product_img_path'] . "' alt=''>
+                        <a href='../productdetails/productdetails.php?product_id=" . $cart_products['product_id'] . "'><img src='" . $cart_products['product_img_path'] . "' alt=''></a>
                         </div>
                         <div class='shoppingcart-product-details'>
                             <p>Ruched Pocket Cotton Poplin Elastic Waist Skirt</p>
@@ -102,7 +102,7 @@ $result = mysqli_query($conn, $query);
                 </div>
             ";
             }
-            echo "
+            /*  echo "
             <div class='view-total-amount'>";
 
             $subtotal = 0;
@@ -138,7 +138,7 @@ $result = mysqli_query($conn, $query);
 
                     <button type='submit'><a href='../inc/submitorders.php'>Proceed to Checkout</a></button>
 
-                </div>";
+                </div>";*/
         } else {
             echo "
         <p>No Products for Shopping Cart</p>";

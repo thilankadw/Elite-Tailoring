@@ -38,7 +38,7 @@
                 echo "
 
         <div id='measurements-form-male'>
-            <form action='' method='POST'>
+            <form action='../inc/submit_boy_measurements.php' method='POST'>
 
             <div class='measurements-form-element'>
                 <label for='height'>Height</label>
@@ -97,7 +97,7 @@
  
 
         <div id='measurements-form-female'>
-            <form action='' method='POST'>
+            <form action='../inc/submit_girl_measurements.php' method='POST'>
 
             <div class='measurements-form-element'>
                 <label for='height'>Height</label>
@@ -152,7 +152,7 @@
                 <input type='text' name='dress-length' id='dress-length'>
             </div>
             <div class='measurements-form-element'>
-                <input type='submit' name='submit-male-form' id='submit-male-form' value='Submit'>
+                <input type='submit' name='submit-girl-form' id='submit-girl-form' value='Submit'>
             </div>
             </form>
         </div>";
