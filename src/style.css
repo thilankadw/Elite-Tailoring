@@ -862,6 +862,9 @@ footer a, p{
 .aboutus-img img{
     width: 60rem;
 }
+#welcome{
+    font-size:x-large;
+}
 .aboutus-container{
     display: flex;
     flex-direction: column;
