@@ -1,15 +1,14 @@
 <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $database = "elite_test";
+$servername = "localhost";
+$username = "root";
+$password = "";
+$database = "elite_tailoring";
 
-    // Create connection
-    $conn = mysqli_connect($servername, $username, $password, $database);
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $database);
 
-    // Check connection
-    if (!$conn) {
+// Check connection
+if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
-    }
+}
     //echo "Connected successfully";
-?>

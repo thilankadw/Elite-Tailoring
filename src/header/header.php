@@ -42,7 +42,7 @@
             </div>
             <div class="nav-cart-btn">
                 <a href="../shoppingcart/shoppingcart.php">
-                    <i class="fa-regular fa-cart-shopping"></i>
+                    <i class="fa-regular fa-heart"></i>
                     CART
                 </a>
             </div>
