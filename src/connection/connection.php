@@ -2,7 +2,7 @@
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $database = "elite_test";
+    $database = "elite_tailoring";
 
     // Create connection
     $conn = mysqli_connect($servername, $username, $password, $database);

@@ -89,12 +89,30 @@
     </div>
   </div>
 
+  </div><br><br>
+  <div class="Slideshow-container">
+    <div class="MYSlides Fade">
 
+      <img src="../assets/index/banner3.jpg" style="width:100%">
 
+    </div>
+    <div class="MYSlides Fade">
 
+      <img src="../assets/index/banner4.jpg" style="width:100%">
+
+    </div>
 
   </div>
 
+  <div>
+    <span class="circle"></span>
+    <span class="circle"></span>
+    <span class="circle"></span>
+    <span class="circle"></span>
+  </div>
+
+
+  
 
 
 

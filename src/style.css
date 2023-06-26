@@ -1115,6 +1115,14 @@ footer a, p{
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+.Slideshow-container{
+    max-width: 80rem;;
+    position: relative;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
   
   /* Caption text */
   .text {
@@ -1134,6 +1142,12 @@ footer a, p{
 }  
 /* Fading animation */
 .fade {
+
+    animation-name: fade;
+    animation-duration: 1.5s;
+
+}
+.Fade{
 
     animation-name: fade;
     animation-duration: 1.5s;
