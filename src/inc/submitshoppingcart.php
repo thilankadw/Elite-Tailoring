@@ -45,7 +45,7 @@ if (isset($_SESSION['user_id'])) {
         $results = mysqli_query($conn, $sql);
         if ($results) {
             echo '<script>';
-            echo 'alert("Order Placed Successfully!!!");';
+            echo 'alert("Order placed successfully!!!<br>You can do your payment when the order is delivered...");';
             echo 'window.location.href = "../index/index.php?user_id=' . $user_id . '"';
             echo '</script>';
             exit;
